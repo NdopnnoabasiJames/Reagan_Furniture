@@ -10,7 +10,7 @@ const ContactPage = () => {
   const [form, setForm] = useState({
     firstName: '', lastName: '', email: '', phone: '', category: '', message: '',
   });
-
+//Testing vercel deployment
   const set = (field: string) =>
     (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>
       setForm(prev => ({ ...prev, [field]: e.target.value }));
