@@ -45,31 +45,55 @@ const SORT_OPTIONS = ['Default', 'Price: Low to High', 'Price: High to Low', 'Na
 
 const ProductsPage = () => {
   const navigate = useNavigate();
-  const [searchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
 
-  const [activeTab, setActiveTab]         = useState<ActiveCat>(() => {
-    const cat = searchParams.get('cat') as Category | null;
-    return cat && (CATEGORIES as readonly string[]).includes(cat) ? cat : 'All';
-  });
-  const [searchInput, setSearchInput]     = useState('');
-  const [searchActive, setSearchActive]   = useState('');
-  const [subCat, setSubCat]               = useState('All Items');
-  const [minPrice, setMinPrice]           = useState('');
-  const [maxPrice, setMaxPrice]           = useState('');
-  const [sortVal, setSortVal]             = useState('Default');
-  const [appliedMin, setAppliedMin]       = useState('');
-  const [appliedMax, setAppliedMax]       = useState('');
-  const [appliedSort, setAppliedSort]     = useState('Default');
-  const [page, setPage]                   = useState(1);
-  const [viewMode, setViewMode]           = useState<'grid' | 'list'>('grid');
+  // ── URL is the single source of truth for all applied filter state ──
+  // Reading directly from searchParams means Back/Forward navigation
+  // automatically restores the exact category, page, search and filters
+  // without any manual state synchronisation.
+  const activeTab: ActiveCat = (() => {
+    const cat = searchParams.get('cat');
+    return cat && (CATEGORIES as readonly string[]).includes(cat as Category)
+      ? (cat as Category)
+      : 'All';
+  })();
+  const page         = Math.max(1, Number(searchParams.get('page')) || 1);
+  const searchActive = searchParams.get('q')    ?? '';
+  const appliedSort  = searchParams.get('sort') ?? 'Default';
+  const appliedMin   = searchParams.get('min')  ?? '';
+  const appliedMax   = searchParams.get('max')  ?? '';
 
+  // ── Pending (local) state — what's in the inputs before the user
+  //    presses Search / Apply. Initialised from URL so the inputs already
+  //    show the correct values when restoring via Back navigation.
+  const [searchInput, setSearchInput] = useState(searchActive);
+  const [subCat, setSubCat]           = useState('All Items');
+  const [minPrice, setMinPrice]       = useState(appliedMin);
+  const [maxPrice, setMaxPrice]       = useState(appliedMax);
+  const [sortVal, setSortVal]         = useState(appliedSort);
+  const [viewMode, setViewMode]       = useState<'grid' | 'list'>('grid');
+
+  // Resync pending inputs when URL changes via Back/Forward so the filter
+  // sidebar always reflects what is actually applied.
   useEffect(() => {
-    const cat = searchParams.get('cat') as Category | null;
-    if (cat && (CATEGORIES as readonly string[]).includes(cat)) {
-      setActiveTab(cat);
-      setPage(1);
-    }
+    setSearchInput(searchParams.get('q')    ?? '');
+    setMinPrice(searchParams.get('min')     ?? '');
+    setMaxPrice(searchParams.get('max')     ?? '');
+    setSortVal(searchParams.get('sort')     ?? 'Default');
   }, [searchParams]);
+
+  // ── Helpers ────────────────────────────────────────────────────────
+  // Apply a patch to the current search params. Empty string removes the key
+  // so the URL stays clean (no ?page=1&cat=All noise).
+  const patchParams = (updates: Record<string, string>) => {
+    setSearchParams(prev => {
+      const next = new URLSearchParams(prev);
+      Object.entries(updates).forEach(([k, v]) => {
+        if (v) next.set(k, v); else next.delete(k);
+      });
+      return next;
+    });
+  };
 
   const filtered = useMemo(() => {
     let list = activeTab === 'All' ? PRODUCTS : PRODUCTS.filter(p => p.category === activeTab);
@@ -92,30 +116,38 @@ const ProductsPage = () => {
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const visible    = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
+  // ── Handlers — each writes to the URL; React Router's history stack
+  //    records every state change so pressing Back replays them in order.
   const handleTabSelect = (tab: ActiveCat) => {
-    setActiveTab(tab);
+    patchParams({ cat: tab === 'All' ? '' : tab, page: '' });
     setSubCat('All Items');
-    setPage(1);
   };
 
   const handleSearch = () => {
-    setSearchActive(searchInput);
-    setPage(1);
+    patchParams({ q: searchInput, page: '' });
   };
 
   const handleApply = () => {
-    setAppliedMin(minPrice);
-    setAppliedMax(maxPrice);
-    setAppliedSort(sortVal);
-    setPage(1);
+    patchParams({
+      min:  minPrice,
+      max:  maxPrice,
+      sort: sortVal === 'Default' ? '' : sortVal,
+      page: '',
+    });
   };
 
   const handleClear = () => {
+    setSearchParams({});
     setSubCat('All Items');
-    setMinPrice(''); setMaxPrice(''); setSortVal('Default');
-    setAppliedMin(''); setAppliedMax(''); setAppliedSort('Default');
-    setSearchInput(''); setSearchActive('');
-    setPage(1);
+    setSearchInput('');
+    setMinPrice('');
+    setMaxPrice('');
+    setSortVal('Default');
+  };
+
+  const handlePageChange = (n: number) => {
+    patchParams({ page: String(n) });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const paginationNums = useMemo((): (number | '...')[] => {
@@ -519,7 +551,7 @@ const ProductsPage = () => {
                     <button
                       key={n}
                       type="button"
-                      onClick={() => { setPage(n as number); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                      onClick={() => handlePageChange(n as number)}
                       className={`w-9 h-9 text-[15px] font-medium transition-colors ${
                         page === n
                           ? 'bg-[#5B50D6] text-white'

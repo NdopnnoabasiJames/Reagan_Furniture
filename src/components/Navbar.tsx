@@ -27,7 +27,7 @@ const Navbar = () => {
               src={reaganLogo}
               alt=""
               aria-hidden="true"
-              className="w-full h-full object-contain block"
+              className="w-full h-full object-contain object-left block"
             />
           </div>
           <span

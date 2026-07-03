@@ -104,13 +104,10 @@ const QualitySection = () => {
         className="lg:w-[50%] shrink-0 relative flex flex-col"
         style={{ backgroundColor: '#181820', minHeight: '420px' }}
       >
-        {/* Top spacer — grows to push image into lower ~55% of the column */}
-        <div className="flex-1" style={{ minHeight: '32px' }} />
-
-        {/* Sofa image — FIXED height, rounded corners */}
+        {/* Sofa image — grows to fill available column height */}
         <div
-          className="shrink-0 overflow-hidden mx-4 md:mx-5"
-          style={{ height: '290px', borderRadius: '12px' }}
+          className="flex-1 overflow-hidden mx-4 md:mx-5"
+          style={{ borderRadius: '12px', minHeight: '290px' }}
         >
           <img
             src={sideImg}

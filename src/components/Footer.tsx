@@ -43,7 +43,7 @@ const Footer = () => (
                 src={reaganLogo}
                 alt=""
                 aria-hidden
-                className="w-full h-full object-contain block"
+                className="w-full h-full object-contain object-left block"
               />
             </div>
             <span
