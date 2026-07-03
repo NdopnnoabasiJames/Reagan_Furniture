@@ -12,6 +12,7 @@ import TestimonialSection from './components/TestimonialSection';
 import FAQSection         from './components/FAQSection';
 import ContactSection     from './components/ContactSection';
 import Footer             from './components/Footer';
+import Reveal             from './components/ui/Reveal';
 
 import ProductsPage       from './pages/ProductsPage';
 import ProductDetailPage  from './pages/ProductDetailPage';
@@ -22,16 +23,16 @@ import ContactPage        from './pages/ContactPage';
 const HomePage = () => (
   <>
     <Navbar />
-    <main>
+    <main className="page-enter">
       <Hero />
       <Marquee />
       <CategorySection />
-      <SpacesSection />
+      <Reveal><SpacesSection /></Reveal>
       <FeaturedProducts />
-      <QualitySection />
-      <TestimonialSection />
-      <FAQSection />
-      <ContactSection />
+      <Reveal><QualitySection /></Reveal>
+      <Reveal><TestimonialSection /></Reveal>
+      <Reveal><FAQSection /></Reveal>
+      <Reveal><ContactSection /></Reveal>
     </main>
     <Footer />
   </>

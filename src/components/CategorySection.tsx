@@ -3,6 +3,7 @@ import {
   Home, Building2, Monitor, Wine, Utensils, Sofa,
   ChevronLeft, ChevronRight,
 } from 'lucide-react';
+import Reveal from './ui/Reveal';
 
 const SERIF = "'Playfair Display', Georgia, 'Times New Roman', serif";
 
@@ -65,17 +66,17 @@ const CategorySection = () => {
           {CATEGORIES.map(({ label, Icon }, i) => {
             const isActive = i === active;
             return (
+              <Reveal key={label} delay={i * 70} className="shrink-0 snap-start">
               <button
-                key={label}
                 type="button"
                 aria-pressed={isActive}
                 onClick={() => setActive(i)}
                 className={[
-                  'relative shrink-0 snap-start flex flex-col items-center justify-center gap-2.5 md:gap-3',
-                  'rounded-xl transition-all duration-200 cursor-pointer',
+                  'relative flex flex-col items-center justify-center gap-2.5 md:gap-3',
+                  'rounded-xl cursor-pointer',
                   isActive
-                    ? 'bg-[#3D3898] text-white shadow-md'
-                    : 'bg-white text-gray-400 border border-gray-200 hover:border-gray-300 hover:shadow-sm',
+                    ? 'bg-[#3D3898] text-white shadow-md transition-all duration-300'
+                    : 'bg-white text-gray-400 border border-gray-200 hover:border-gray-300 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300',
                 ].join(' ')}
                 style={{ width: '155px', height: '138px', padding: '16px 14px' }}
               >
@@ -90,6 +91,7 @@ const CategorySection = () => {
                   {label}
                 </span>
               </button>
+              </Reveal>
             );
           })}
         </div>

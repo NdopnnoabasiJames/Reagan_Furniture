@@ -33,19 +33,17 @@ const Footer = () => (
       {/* ── Main grid ─────────────────────────────────────────────── */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-12 lg:gap-16 mb-12 md:mb-14">
 
-        {/* Brand — full width on mobile */}
-        <div className="sm:col-span-2 md:col-span-1">
+        {/* Brand — spans 2 cols at tablet so logo+wordmark has room; 1 col at desktop */}
+        <div className="sm:col-span-2 md:col-span-2 lg:col-span-1">
 
           {/* Logo + wordmark */}
-          <a href="/" className="flex items-center gap-0.1 mb-5">
-            <div className="shrink-0" style={{ width: '86px', height: '72px' }}>
-              <img
-                src={reaganLogo}
-                alt=""
-                aria-hidden
-                className="w-full h-full object-contain object-left block"
-              />
-            </div>
+          <a href="/" className="flex items-center gap-2 mb-5">
+            <img
+              src={reaganLogo}
+              alt=""
+              aria-hidden
+              className="h-[56px] w-auto block shrink-0"
+            />
             <span
               className="text-gray-900 font-bold leading-none"
               style={{ fontFamily: 'Inter, system-ui, sans-serif', fontSize: '42px' }}
@@ -141,8 +139,8 @@ const Footer = () => (
           </ul>
         </div>
 
-        {/* Contact */}
-        <div>
+        {/* Contact — spans 2 cols at tablet to fill row 2; 1 col at desktop */}
+        <div className="md:col-span-2 lg:col-span-1">
           <h3
             className="text-gray-900 font-bold uppercase mb-6 md:mb-7"
             style={{ fontFamily: SERIF, fontSize: '24px' }}

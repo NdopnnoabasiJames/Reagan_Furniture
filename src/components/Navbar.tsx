@@ -21,26 +21,24 @@ const Navbar = () => {
       <div className="mx-auto px-5 sm:px-10 md:px-14 lg:px-16 xl:px-20 flex items-center justify-between h-[60px] md:h-[68px]">
 
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-1 shrink-0">
-          <div className="w-[80px] md:w-[58px] overflow-hidden shrink-0 self-center flex items-center" style={{ height: '62px' }}>
-            <img
-              src={reaganLogo}
-              alt=""
-              aria-hidden="true"
-              className="w-full h-full object-contain object-left block"
-            />
-          </div>
+        <Link to="/" className="flex items-center gap-2 shrink-0">
+          <img
+            src={reaganLogo}
+            alt=""
+            aria-hidden="true"
+            className="h-[44px] w-auto block shrink-0"
+          />
           <span
-            className="text-gray-900 font-bold text-[28px] md:text-[22px] leading-none self-center"
+            className="text-gray-900 font-bold text-[22px] leading-none"
             style={{ fontFamily: 'Inter, system-ui, sans-serif' }}
           >
             Reagan
           </span>
         </Link>
 
-        {/* Nav links — desktop only */}
+        {/* Nav links — desktop only (lg+) */}
         <nav
-          className="hidden md:flex items-center gap-9 absolute left-1/2 -translate-x-1/2"
+          className="hidden lg:flex items-center gap-9 absolute left-1/2 -translate-x-1/2"
           aria-label="Main navigation"
         >
           {NAV_LINKS.map(({ label, href }) => (
@@ -72,12 +70,12 @@ const Navbar = () => {
             Enquire
           </button>
 
-          {/* Hamburger — mobile only */}
+          {/* Hamburger — mobile + tablet */}
           <button
             type="button"
             aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={mobileOpen}
-            className="md:hidden p-1.5 text-gray-700 hover:text-gray-900 transition-colors"
+            className="lg:hidden p-1.5 text-gray-700 hover:text-gray-900 transition-colors"
             onClick={() => setMobileOpen(!mobileOpen)}
           >
             {mobileOpen ? <X size={22} /> : <Menu size={22} />}
@@ -85,9 +83,9 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* ── Mobile dropdown ─────────────────────────────────────── */}
+      {/* ── Mobile + Tablet dropdown ────────────────────────────── */}
       {mobileOpen && (
-        <div className="md:hidden bg-[#f4f3f3] border-t border-gray-200/70 px-5 pt-4 pb-6">
+        <div className="lg:hidden bg-[#f4f3f3] border-t border-gray-200/70 px-5 pt-4 pb-6">
           <nav className="flex flex-col gap-1" aria-label="Mobile navigation">
             {NAV_LINKS.map(({ label, href }) => (
               <NavLink
@@ -105,10 +103,11 @@ const Navbar = () => {
             ))}
           </nav>
 
+          {/* Only show Enquire in drawer on mobile — tablet shows it in the header */}
           <button
             type="button"
             onClick={() => { navigate('/contact'); setMobileOpen(false); }}
-            className="mt-5 block w-full text-center text-white text-[14px] font-semibold uppercase tracking-[0.14em] py-3.5 cursor-pointer"
+            className="md:hidden mt-5 block w-full text-center text-white text-[14px] font-semibold uppercase tracking-[0.14em] py-3.5 cursor-pointer"
             style={{ backgroundColor: '#5B50D6' }}
           >
             Enquire

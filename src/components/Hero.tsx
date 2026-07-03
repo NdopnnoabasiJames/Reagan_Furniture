@@ -222,7 +222,7 @@ const Hero = () => {
             </div>
 
             {/* Caption */}
-            <p className="text-white/60 font-light w-full" style={{ fontSize: '12px', lineHeight: '1.7' }}>
+            <p className="text-white/60 font-light w-full" style={{ fontSize: '14px', lineHeight: '1.7' }}>
               Discover premium furniture, electronics, and lifestyle essentials
               designed to elevate every part of your home and workspace.
             </p>

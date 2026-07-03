@@ -104,15 +104,15 @@ const QualitySection = () => {
         className="lg:w-[50%] shrink-0 relative flex flex-col"
         style={{ backgroundColor: '#181820', minHeight: '420px' }}
       >
-        {/* Sofa image — grows to fill available column height */}
+        {/* Sofa image — inset from edges so it reads as a contained portrait */}
         <div
-          className="flex-1 overflow-hidden mx-4 md:mx-5"
+          className="flex-1 overflow-hidden mx-4 md:mx-5 p-6 md:p-8"
           style={{ borderRadius: '12px', minHeight: '290px' }}
         >
           <img
             src={sideImg}
             alt="Premium interior showcase"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
             style={{ objectPosition: 'center' }}
           />
         </div>
