@@ -218,7 +218,7 @@ const ProductDetailPage = () => {
                 Interested in this product? Send us an enquiry and our team will get back to you within 24 hours.
               </p>
               <Link
-                to="/contact"
+                to={`/contact?pid=${product.id}`}
                 className="block w-full text-center text-white text-[13.5px] font-semibold uppercase tracking-[0.16em] py-4 rounded-[8px] hover:brightness-110 active:brightness-90 transition-all duration-200"
                 style={{ backgroundColor: '#5B50D6' }}
               >

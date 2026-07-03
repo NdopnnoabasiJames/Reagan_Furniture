@@ -9,7 +9,7 @@ import heroImg2 from '../assets/products/Home_furniture/hf-09.jpeg';
 import heroImg3 from '../assets/products/Home_furniture/hf-32.jpeg';
 
 const SERIF = "'Playfair Display', Georgia, serif";
-const PAGE_SIZE = 10;
+const PAGE_SIZE = 30;
 
 type ActiveCat = 'All' | Category;
 
@@ -448,9 +448,13 @@ const ProductsPage = () => {
                         <span className="text-[15px] font-bold text-gray-900" style={{ fontFamily: SERIF }}>
                           {p.price}
                         </span>
-                        <span className="text-[12px] uppercase tracking-[0.14em] font-semibold text-gray-500 group-hover:text-[#5B50D6] transition-colors flex items-center gap-1">
+                        <button
+                          type="button"
+                          onClick={e => { e.stopPropagation(); navigate(`/contact?pid=${p.id}`); }}
+                          className="text-[12px] uppercase tracking-[0.14em] font-semibold text-gray-500 hover:text-[#5B50D6] transition-colors flex items-center gap-1"
+                        >
                           Enquire <span className="text-[14px]">→</span>
-                        </span>
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -491,9 +495,13 @@ const ProductsPage = () => {
                         <span className="text-[15px] font-bold text-gray-900" style={{ fontFamily: SERIF }}>
                           {p.price}
                         </span>
-                        <span className="text-[12px] uppercase tracking-[0.14em] font-semibold text-gray-500 group-hover:text-[#5B50D6] transition-colors flex items-center gap-1">
+                        <button
+                          type="button"
+                          onClick={e => { e.stopPropagation(); navigate(`/contact?pid=${p.id}`); }}
+                          className="text-[12px] uppercase tracking-[0.14em] font-semibold text-gray-500 hover:text-[#5B50D6] transition-colors flex items-center gap-1"
+                        >
                           Enquire <span>→</span>
-                        </span>
+                        </button>
                       </div>
                     </div>
                   </div>

@@ -7,6 +7,13 @@ import hf29 from '../../assets/products/Outdoors/hf-29.jpeg';
 import hf30 from '../../assets/products/Outdoors/hf-30.jpeg';
 import hf31 from '../../assets/products/Outdoors/hf-31.jpeg';
 
+import hf67 from '../../assets/products/Home_furniture/hf-67.jpeg';
+import out01 from '../../assets/products/Outdoors/out-01.jpeg';
+import out02 from '../../assets/products/Outdoors/out-02.jpeg';
+import out03 from '../../assets/products/Outdoors/out-03.jpeg';
+import out04 from '../../assets/products/Outdoors/out-04.jpeg';
+import out05 from '../../assets/products/Outdoors/out-05.jpeg';
+
 export const outdoorFurnitureProducts: Product[] = [
   {
     id: 'garden-swing-chair',
@@ -82,5 +89,67 @@ export const outdoorFurnitureProducts: Product[] = [
     featured: true,
     gallery: [hf31],
     specs: ['4-piece set', 'Solid hardwood frame', 'White lacquer finish', 'Charcoal weather-resistant cushions'],
+  },
+  {
+    id: 'cast-iron-garden-dining-set',
+    name: 'Cast Iron Garden Dining Set',
+    category: 'Outdoor Furniture',
+    description: 'A classic wrought iron garden dining set with a circular table and four matching chairs in an ornate vine-and-scroll design. The heavy-gauge construction and rust-resistant powder-coat finish ensure longevity in any outdoor setting.',
+    price: '₦850,000',
+    priceNum: 850000,
+    image: hf67,
+    objectPos: 'center',
+    gallery: [hf67],
+    specs: ['4-seater circular dining set', 'Wrought iron construction', 'Ornate vine-and-scroll design', 'Rust-resistant powder-coat finish'],
+  },
+  {
+    id: 'rattan-hanging-egg-chair',
+    name: 'Rattan Hanging Egg Chair',
+    category: 'Outdoor Furniture',
+    description: 'A freestanding hanging egg chair in hand-woven PE rattan with a deep cushioned seat and powder-coated steel stand. Available in warm brown or sleek black — the ultimate poolside and terrace statement piece for luxury outdoor spaces.',
+    price: '₦380,000',
+    priceNum: 380000,
+    imageVariant: 'portrait',
+    image: out01,
+    objectPos: 'center',
+    featured: true,
+    gallery: [out01, out02],
+    specs: ['Freestanding with steel stand', 'Hand-woven PE rattan shell', 'Deep padded seat cushion', 'Available in brown or black'],
+  },
+  {
+    id: 'al-fresco-bistro-set',
+    name: 'Al Fresco Woven Rope Bistro Set',
+    category: 'Outdoor Furniture',
+    description: 'A charming 4-seater outdoor bistro set with woven rope-back armchairs and a round pedestal table in a warm natural finish. The Provençal-inspired design suits garden terraces, covered patios and al fresco dining spaces.',
+    price: '₦520,000',
+    priceNum: 520000,
+    image: out03,
+    objectPos: 'center',
+    gallery: [out03],
+    specs: ['4-seater set (table + 4 chairs)', 'Woven rope-back armchairs', 'Round pedestal dining table', 'UV-resistant natural finish'],
+  },
+  {
+    id: 'poolside-patio-dining-set',
+    name: 'Patio Dining Set with Parasol',
+    category: 'Outdoor Furniture',
+    description: 'A complete 5-piece poolside patio dining set — a square glass-top table, four reclining mesh chairs and a large burgundy market umbrella. Everything you need for shaded outdoor entertaining, from pool decks to rooftop terraces.',
+    price: '₦480,000',
+    priceNum: 480000,
+    image: out04,
+    objectPos: 'center',
+    gallery: [out04],
+    specs: ['5-piece set (table + 4 chairs + parasol)', 'Square tempered glass table top', 'Reclining folding mesh chairs', 'Large 270cm market umbrella'],
+  },
+  {
+    id: 'tandem-garden-canopy-swing',
+    name: 'Tandem Garden Canopy Swing',
+    category: 'Outdoor Furniture',
+    description: 'A side-by-side 2-seat garden swing bench with individual canopy shades, deep tufted beige cushions and cup holders on each armrest. The robust powder-coated black steel frame handles all weather — a relaxing centrepiece for any garden or veranda.',
+    price: '₦320,000',
+    priceNum: 320000,
+    image: out05,
+    objectPos: 'center',
+    gallery: [out05],
+    specs: ['2-seat tandem swing bench', 'Individual canopy shades per seat', 'Deep tufted beige cushions', 'Cup holders on each armrest'],
   },
 ];

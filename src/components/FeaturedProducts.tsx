@@ -89,9 +89,13 @@ const FeaturedProducts = () => {
                 >
                   {p.price}
                 </span>
-                <span className="text-[11px] sm:text-[12px] uppercase tracking-[0.12em] font-semibold text-gray-500 group-hover:text-[#5B50D6] transition-colors flex items-center gap-0.5">
+                <button
+                  type="button"
+                  onClick={e => { e.stopPropagation(); navigate(`/contact?pid=${p.id}`); }}
+                  className="text-[11px] sm:text-[12px] uppercase tracking-[0.12em] font-semibold text-gray-500 hover:text-[#5B50D6] transition-colors flex items-center gap-0.5"
+                >
                   Enquire <span className="text-[12px]">→</span>
-                </span>
+                </button>
               </div>
             </div>
           </div>

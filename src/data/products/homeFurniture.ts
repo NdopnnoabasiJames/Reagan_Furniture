@@ -1,11 +1,8 @@
 import type { Product } from './types';
 
 import hf01 from '../../assets/products/Home_furniture/hf-01.jpeg';
-import hf02 from '../../assets/products/Home_furniture/hf-02.jpeg';
-import hf03 from '../../assets/products/Home_furniture/hf-03.jpeg';
 import hf04 from '../../assets/products/Home_furniture/hf-04.jpeg';
 import hf05 from '../../assets/products/Home_furniture/hf-05.jpeg';
-import hf06 from '../../assets/products/Home_furniture/hf-06.jpeg';
 import hf09 from '../../assets/products/Home_furniture/hf-09.jpeg';
 import hf10 from '../../assets/products/Home_furniture/hf-10.jpeg';
 import hf11 from '../../assets/products/Home_furniture/hf-11.jpeg';
@@ -49,6 +46,22 @@ import hf52 from '../../assets/products/Home_furniture/hf-52.jpeg';
 import hf53 from '../../assets/products/Home_furniture/hf-53.jpeg';
 import hf54 from '../../assets/products/Home_furniture/hf-54.jpeg';
 import hf55 from '../../assets/products/Home_furniture/hf-55.jpeg';
+import hf56 from '../../assets/products/Home_furniture/hf-56.jpeg';
+import hf59 from '../../assets/products/Home_furniture/hf-59.jpeg';
+import hf61 from '../../assets/products/Home_furniture/hf-61.jpeg';
+import hf62 from '../../assets/products/Home_furniture/hf-62.jpeg';
+import hf63 from '../../assets/products/Home_furniture/hf-63.jpeg';
+import hf64 from '../../assets/products/Home_furniture/hf-64.jpeg';
+import hf65 from '../../assets/products/Home_furniture/hf-65.jpeg';
+import hf66 from '../../assets/products/Home_furniture/hf-66.jpeg';
+import hf68 from '../../assets/products/Home_furniture/hf-68.jpeg';
+import hf69 from '../../assets/products/Home_furniture/hf-69.jpeg';
+import hf70 from '../../assets/products/Home_furniture/hf-70.jpeg';
+import hf71 from '../../assets/products/Home_furniture/hf-71.jpeg';
+import hf72 from '../../assets/products/Home_furniture/hf-72.jpeg';
+import hf73 from '../../assets/products/Home_furniture/hf-73.jpeg';
+import hf74 from '../../assets/products/Home_furniture/hf-74.jpeg';
+import bg01 from '../../assets/products/Bags/bg-01.jpeg';
 
 export const homeFurnitureProducts: Product[] = [
   {
@@ -62,7 +75,7 @@ export const homeFurnitureProducts: Product[] = [
     objectPos: 'center',
     imageVariant: 'portrait',
     featured: true,
-    gallery: [hf01, hf02, hf03],
+    gallery: [hf01],
     specs: ['Premium black leather', 'Walnut wood shell', 'Matching ottoman included', '360° swivel base'],
   },
   {
@@ -88,7 +101,7 @@ export const homeFurnitureProducts: Product[] = [
     objectPos: 'center',
     imageVariant: 'portrait',
     featured: true,
-    gallery: [hf05, hf06],
+    gallery: [hf05],
     specs: ['Premium black leather', 'Rosewood shell finish', 'Matching ottoman included', 'Low-profile chrome base'],
   },
   {
@@ -223,23 +236,10 @@ export const homeFurnitureProducts: Product[] = [
     description: 'A striking Art Deco sofa with a geometric window-frame side panel in cream relief and a smoked mirror inset, raised on a gold lattice base. Available in ivory cream or graphite charcoal — each a bold statement in any contemporary luxury interior.',
     price: '₦6,500,000',
     priceNum: 6500000,
-    image: hf49,
+    image: hf43,
     objectPos: 'center',
-    gallery: [hf43, hf49, hf48],
+    gallery: [hf43, hf49, hf48, hf44],
     specs: ['Available in cream or graphite', 'Geometric window-frame side panel', 'Smoked mirror inset detail', 'Gold lattice base'],
-  },
-  {
-    id: 'modern-accent-tub-chair',
-    name: 'Modern Accent Tub Chair',
-    category: 'Home Furniture',
-    description: 'A clean-lined modern tub/barrel accent chair in cream textured fabric with gently curved arms and a polished gold plinth base. The perfect accent piece for living rooms, reading corners and luxury hotel lobbies.',
-    price: '₦145,000',
-    priceNum: 145000,
-    image: hf44,
-    objectPos: 'center',
-    imageVariant: 'portrait',
-    gallery: [hf44],
-    specs: ['Barrel/tub silhouette', 'Cream textured fabric', 'Polished gold plinth base', 'Suitable for indoor use'],
   },
   {
     id: 'baroque-sofa-set-blue',
@@ -273,6 +273,7 @@ export const homeFurnitureProducts: Product[] = [
     description: 'A sculptural designer coffee table with a pivoting white marble-effect glass top and a taupe lacquered body in an organic curved form. The lift mechanism rotates the top to reveal concealed storage — a statement centrepiece for contemporary and luxury living rooms.',
     price: '₦750,000',
     priceNum: 750000,
+    imageVariant: 'portrait',
     image: hf53,
     objectPos: 'center',
     gallery: [hf53],
@@ -302,5 +303,162 @@ export const homeFurnitureProducts: Product[] = [
     objectPos: 'center',
     gallery: [hf55],
     specs: ['High-density spring system', 'Orthopaedic lumbar support zones', 'Breathable knit surface fabric', 'King size (183 × 203cm)'],
+  },
+  {
+    id: 'black-baroque-empire-sofa',
+    name: 'Black Empire Baroque Sofa Suite',
+    category: 'Home Furniture',
+    description: 'A commanding baroque sofa suite in deep black velvet with a hand-carved silver frame. The ornate scrolled arms, cabriole legs and deep button-tufted back deliver maximum drama for formal sitting rooms, hotel lobbies and prestige reception areas.',
+    price: '₦7,500,000',
+    priceNum: 7500000,
+    image: hf56,
+    objectPos: 'center',
+    gallery: [hf56],
+    specs: ['3-piece set (sofa + 2 armchairs)', 'Deep black velvet upholstery', 'Hand-carved silver-leaf frame', 'Deep button-tufted back & seat'],
+  },
+  {
+    id: 'taupe-luxury-sofa-set',
+    name: 'Taupe Luxury Sofa Set with Gold Accents',
+    category: 'Home Furniture',
+    description: 'A plush taupe fabric sofa set with deep cushioning and brushed gold accent legs. The wide low-back silhouette and generous seat depth create an enveloping lounging experience — perfect for luxury apartments and contemporary villa interiors.',
+    price: '₦4,800,000',
+    priceNum: 4800000,
+    image: hf59,
+    objectPos: 'center',
+    featured: true,
+    gallery: [hf59],
+    specs: ['3-seater sofa + 2 accent chairs', 'Premium taupe fabric upholstery', 'Brushed gold accent legs', 'Deep loose cushion seating'],
+  },
+  {
+    id: 'marble-pedestal-coffee-table',
+    name: 'Marble Top Pedestal Coffee Table',
+    category: 'Home Furniture',
+    description: 'A refined round coffee table with a genuine veined marble top on a sculptural ribbed grey concrete-look pedestal base. Equally at home in minimalist and luxury interiors — a sophisticated centrepiece for any living room.',
+    price: '₦380,000',
+    priceNum: 380000,
+    image: hf61,
+    objectPos: 'center',
+    gallery: [hf61],
+    specs: ['Round design', 'Genuine veined marble top', 'Ribbed concrete-effect pedestal', 'Diameter: 80cm'],
+  },
+  {
+    id: 'walnut-gold-pedestal-side-tables',
+    name: 'Walnut & Gold Pedestal Side Tables',
+    category: 'Home Furniture',
+    description: 'A pair of elegant nesting side tables with rich walnut-effect tops and slim brushed gold pedestal bases. Nest together when not in use — a versatile and stylish addition to any living room, bedroom or study.',
+    price: '₦260,000',
+    priceNum: 260000,
+    image: hf62,
+    objectPos: 'center',
+    gallery: [hf62],
+    specs: ['Set of 2 nesting tables', 'Walnut-effect top', 'Brushed gold pedestal base', 'Compact & stackable design'],
+  },
+  {
+    id: 'gold-sphere-marble-table-set',
+    name: 'Gold Sphere Marble Coffee & Side Table Set',
+    category: 'Home Furniture',
+    description: 'A striking 3-piece living room table set with white veined marble tops balanced on sculptural gold sphere bases. The varying heights add visual dynamism — use the larger piece as a coffee table and the smaller ones as side tables.',
+    price: '₦480,000',
+    priceNum: 480000,
+    image: hf63,
+    objectPos: 'center',
+    gallery: [hf63],
+    specs: ['3-piece set (1 coffee + 2 side tables)', 'White veined marble tops', 'Gold sphere sculptural bases', 'Multiple height configuration'],
+  },
+  {
+    id: 'swivel-storage-coffee-table',
+    name: 'Swivel-Top Storage Coffee Table',
+    category: 'Home Furniture',
+    description: 'A clever and contemporary coffee table with a rotating lift top that reveals a spacious hidden storage compartment. The dark walnut finish and clean geometric silhouette make it a functional yet refined centrepiece for modern living rooms.',
+    price: '₦320,000',
+    priceNum: 320000,
+    image: hf64,
+    objectPos: 'center',
+    gallery: [hf64, hf65],
+    specs: ['Lift & swivel top mechanism', 'Concealed storage compartment', 'Dark walnut finish', 'Extendable side surface'],
+  },
+  {
+    id: 'slatted-multicolor-dining-set',
+    name: 'Modern Slatted Multi-Color Dining Set',
+    category: 'Home Furniture',
+    description: 'A contemporary 4-seater dining set with a round pedestal table and sculptural slatted-back chairs in a vibrant mix of colours. The Scandinavian-influenced design brings energy and personality to kitchen diners, compact dining rooms and home offices.',
+    price: '₦950,000',
+    priceNum: 950000,
+    image: hf66,
+    objectPos: 'center',
+    gallery: [hf66, hf68],
+    specs: ['4-seater set', 'Multicolour slatted-back chairs', 'Round pedestal dining table', 'Contemporary Scandinavian design'],
+  },
+  {
+    id: 'marble-tv-console-set',
+    name: 'Marble Top Coffee Table & TV Console Set',
+    category: 'Home Furniture',
+    description: 'A coordinated 2-piece living room set featuring a white marble-top coffee table and a matching TV console unit with open shelving and concealed storage. The warm white and walnut finish combination works beautifully in contemporary, Japandi and transitional interiors.',
+    price: '₦850,000',
+    priceNum: 850000,
+    image: hf69,
+    objectPos: 'center',
+    gallery: [hf69, hf73],
+    specs: ['2-piece set (coffee table + TV console)', 'White marble-effect top', 'Walnut veneer open shelving', 'TV console: fits up to 65" TV'],
+  },
+  {
+    id: 'white-gold-living-set',
+    name: 'White & Gold Coffee Table + TV Stand',
+    category: 'Home Furniture',
+    description: 'A matching white gloss and brushed gold 2-piece living room set — a tempered glass-top coffee table with gold frame and a coordinated TV unit with open display shelves and a lower storage cabinet. A glamorous yet practical combination for modern interiors.',
+    price: '₦680,000',
+    priceNum: 680000,
+    image: hf70,
+    objectPos: 'center',
+    gallery: [hf70],
+    specs: ['2-piece set (coffee table + TV stand)', 'White gloss body with gold accents', 'Tempered glass coffee table top', 'TV unit fits up to 60" TV'],
+  },
+  {
+    id: 'white-gold-console-sideboard',
+    name: 'White & Gold Console Sideboard with Mirror',
+    category: 'Home Furniture',
+    description: 'An elegant white gloss console sideboard with brushed gold handles, finished with a large leaning mirror panel. The combination makes a versatile statement piece for hallways, living rooms and bedroom walls — adding light, space and glamour in equal measure.',
+    price: '₦720,000',
+    priceNum: 720000,
+    image: hf71,
+    objectPos: 'center',
+    gallery: [hf71],
+    specs: ['4-door console sideboard', 'White gloss finish with gold handles', 'Large leaning mirror included', 'Dimensions approx: W150 × D40 × H85cm'],
+  },
+  {
+    id: 'white-arc-living-set',
+    name: 'White Arc-Pattern Coffee Table + TV Stand',
+    category: 'Home Furniture',
+    description: 'A 2-piece white living room set with a distinctive arc/scallop pattern inset on cabinet doors. Includes a coffee table and a matching TV stand with open shelving and a drawer — a clean, contemporary choice for modern and coastal interiors.',
+    price: '₦620,000',
+    priceNum: 620000,
+    image: hf72,
+    objectPos: 'center',
+    gallery: [hf72],
+    specs: ['2-piece set (coffee table + TV stand)', 'White gloss with arc-pattern doors', 'Open shelving + drawer storage', 'TV stand fits up to 60" TV'],
+  },
+  {
+    id: 'white-silver-living-set',
+    name: 'White & Silver Coffee Table + TV Unit',
+    category: 'Home Furniture',
+    description: 'A coordinated white and brushed silver 2-piece living room collection. The lift-top coffee table offers hidden storage, while the TV unit features glass-panelled doors and an open central shelf. A refined, functional pairing for contemporary interiors.',
+    price: '₦590,000',
+    priceNum: 590000,
+    image: hf74,
+    objectPos: 'center',
+    gallery: [hf74],
+    specs: ['2-piece set (lift-top coffee table + TV unit)', 'White gloss with silver handles', 'Lift-top coffee table with hidden storage', 'Glass-door display storage'],
+  },
+  {
+    id: 'modern-shell-bar-stools',
+    name: 'Modern Shell Counter Bar Stools',
+    category: 'Home Furniture',
+    description: 'A set of contemporary shell-form counter stools with moulded polypropylene seats in a mix of red, grey and charcoal. The slim powder-coated black wire base adds an industrial-minimalist edge — equally at home at a kitchen island, home bar or creative studio.',
+    price: '₦85,000',
+    priceNum: 85000,
+    image: bg01,
+    objectPos: 'center',
+    gallery: [bg01],
+    specs: ['Available in red, grey and charcoal', 'Moulded polypropylene seat shell', 'Powder-coated black wire base', 'Counter height (65cm seat)'],
   },
 ];
