@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import sideImg from '../assets/products/Home_furniture/hf-35.jpeg';
+import sideImg from '../assets/products/home-furniture/sofas/grey-velvet-chesterfield-set-2.jpeg';
 
 const SERIF  = "'Playfair Display', Georgia, serif";
 const ITALIC = "'Cormorant Garamond', Georgia, serif";

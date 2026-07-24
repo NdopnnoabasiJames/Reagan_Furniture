@@ -1,5 +1,5 @@
-import bgPhoto  from '../assets/products/Home_furniture/hf-50.jpeg';
-import floatImg from '../assets/products/Home_furniture/hf-16.jpeg';
+import bgPhoto  from '../assets/products/home-furniture/sofas/silver-neo-baroque-sofa-suite-1.jpeg';
+import floatImg from '../assets/products/home-furniture/beds/velvet-arched-headboard-bed-1.jpeg';
 
 const HEADING_FONT = "'Cormorant Garamond', Georgia, serif";
 

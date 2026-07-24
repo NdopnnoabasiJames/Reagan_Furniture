@@ -1,6 +1,7 @@
-export type { Category, Product } from './types';
+export type { Category, Product, HomeFurnitureSubCategory } from './types';
+export { HOME_FURNITURE_SUBCATEGORIES } from './home-furniture/subcategories';
 
-import { homeFurnitureProducts }    from './homeFurniture';
+import { homeFurnitureProducts }    from './home-furniture';
 import { outdoorFurnitureProducts } from './outdoorFurniture';
 import { officeFurnitureProducts }  from './officeFurniture';
 import { electronicsProducts }      from './electronics';
