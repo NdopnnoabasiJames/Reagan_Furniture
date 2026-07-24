@@ -5,9 +5,6 @@ import Footer from '../components/Footer';
 import Reveal from '../components/ui/Reveal';
 import { PRODUCTS, CATEGORIES, type Category } from '../data/products';
 
-import heroImg1 from '../assets/products/Home_furniture/hf-03.jpeg';
-import heroImg2 from '../assets/products/Home_furniture/hf-09.jpeg';
-import heroImg3 from '../assets/products/Home_furniture/hf-32.jpeg';
 
 const SERIF = "'Playfair Display', Georgia, serif";
 const PAGE_SIZE = 30;
@@ -121,31 +118,17 @@ const ProductsPage = () => {
           Reagan
         </span>
 
-        <div className="relative z-10 flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-10 px-5 sm:px-12 md:px-16 lg:px-20 xl:px-24 py-10 md:py-14 lg:py-14">
-          <div className="flex-1">
-            <h1
-              className="text-[38px] md:text-[48px] lg:text-[54px] text-gray-900 leading-[1.06] mb-5"
-              style={{ fontFamily: SERIF }}
-            >
-              Our Collection
-            </h1>
-            <p className="text-[15.5px] text-gray-500 leading-[1.85]" style={{ maxWidth: '420px' }}>
-              Reagan carefully curates furniture and electronics to bring quality,
-              comfort and modern style to every home and office across Nigeria.
-            </p>
-          </div>
-
-          <div className="relative hidden lg:block shrink-0" style={{ width: '500px', height: '260px' }}>
-            <div className="absolute overflow-hidden shadow-lg" style={{ left: 0, top: '22px', width: '52%', height: '210px', zIndex: 2 }}>
-              <img src={heroImg1} alt="" className="w-full h-full object-cover" />
-            </div>
-            <div className="absolute overflow-hidden shadow-lg" style={{ right: 0, top: 0, width: '45%', height: '182px', zIndex: 3 }}>
-              <img src={heroImg2} alt="" className="w-full h-full object-cover" />
-            </div>
-            <div className="absolute overflow-hidden shadow-md" style={{ right: '6%', bottom: 0, width: '34%', height: '120px', zIndex: 1 }}>
-              <img src={heroImg3} alt="" className="w-full h-full object-cover" />
-            </div>
-          </div>
+        <div className="relative z-10 px-5 sm:px-12 md:px-16 lg:px-20 xl:px-24 py-10 md:py-14 lg:py-14">
+          <h1
+            className="text-[38px] md:text-[48px] lg:text-[54px] text-gray-900 leading-[1.06] mb-5"
+            style={{ fontFamily: SERIF }}
+          >
+            Our Collection
+          </h1>
+          <p className="text-[15.5px] text-gray-500 leading-[1.85]" style={{ maxWidth: '420px' }}>
+            Reagan carefully curates furniture and electronics to bring quality,
+            comfort and modern style to every home and office across Nigeria.
+          </p>
         </div>
       </section>
 

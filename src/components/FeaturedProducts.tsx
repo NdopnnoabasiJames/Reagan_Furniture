@@ -30,7 +30,7 @@ const FeaturedProducts = () => {
       {/* Cards — horizontal on mobile, grid on sm+ */}
       <div className="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
         {FEATURED.map((p, i) => (
-          <Reveal key={p.id} delay={i * 50}>
+          <Reveal key={p.id} delay={(i % 3) * 40}>
           <div
             onClick={() => navigate(`/products/${p.id}`)}
             className="flex flex-row sm:flex-col border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 cursor-pointer group h-[130px] sm:h-auto"
