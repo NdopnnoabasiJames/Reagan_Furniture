@@ -1,58 +1,136 @@
 import type { Product } from '../types';
 
-import ornate1    from '../../../assets/products/home-furniture/dining/classic-ornate-dining-set-1.jpeg';
-import ornate2    from '../../../assets/products/home-furniture/dining/classic-ornate-dining-set-2.jpeg';
-import ornate3    from '../../../assets/products/home-furniture/dining/classic-ornate-dining-set-3.jpeg';
-import ornate4    from '../../../assets/products/home-furniture/dining/classic-ornate-dining-set-4.jpeg';
-import marble1    from '../../../assets/products/home-furniture/dining/marble-top-dining-set-1.jpeg';
-import marble2    from '../../../assets/products/home-furniture/dining/marble-top-dining-set-2.jpeg';
-import marble3    from '../../../assets/products/home-furniture/dining/marble-top-dining-set-3.jpeg';
-import marble4    from '../../../assets/products/home-furniture/dining/marble-top-dining-set-4.jpeg';
-import marble5    from '../../../assets/products/home-furniture/dining/marble-top-dining-set-5.jpeg';
-import slatted1   from '../../../assets/products/home-furniture/dining/modern-slatted-multicolor-dining-set-1.jpeg';
-import slatted2   from '../../../assets/products/home-furniture/dining/modern-slatted-multicolor-dining-set-2.jpeg';
-import barStools  from '../../../assets/products/home-furniture/dining/modern-shell-bar-stools.jpeg';
+import ornate1        from '../../../assets/products/home-furniture/dining/classic-ornate-dining-set-1.jpeg';
+import charcoalPed    from '../../../assets/products/home-furniture/dining/charcoal-marble-pedestal-dining-set.jpeg';
+import darkBaroque    from '../../../assets/products/home-furniture/dining/dark-baroque-dining-set.jpeg';
+import whiteMarble    from '../../../assets/products/home-furniture/dining/white-marble-barrel-chair-dining-set.jpeg';
+import marble1        from '../../../assets/products/home-furniture/dining/marble-top-dining-set-1.jpeg';
+import roseGold       from '../../../assets/products/home-furniture/dining/rose-gold-marble-dining-set.jpeg';
+import darkSlatted1   from '../../../assets/products/home-furniture/dining/dark-slatted-dining-set-1.jpeg';
+import darkSlatted2   from '../../../assets/products/home-furniture/dining/dark-slatted-dining-set-2.jpeg';
+import roundSlatted1  from '../../../assets/products/home-furniture/dining/round-marble-slatted-dining-set-1.jpeg';
+import roundSlatted2  from '../../../assets/products/home-furniture/dining/round-marble-slatted-dining-set-2.jpeg';
+import marbleBarrel   from '../../../assets/products/home-furniture/dining/marble-grey-barrel-dining-set.jpeg';
+import barStools      from '../../../assets/products/home-furniture/dining/modern-shell-bar-stools.jpeg';
 
 export const diningProducts: Product[] = [
   {
-    id: 'classic-dining-set',
+    id: 'classic-ornate-dining-set',
     name: 'Classic Ornate Dining Set',
     category: 'Home Furniture',
     subCategory: 'Dining',
-    description: 'An elegant white dining set with hand-carved ornate chairs and a marble-effect table surface. A grand centrepiece for formal dining rooms and event spaces.',
+    description: 'An opulent white baroque dining set with hand-carved ornate chairs upholstered in floral fabric. A grand centrepiece for formal dining rooms, manor houses and event spaces where classical elegance is the brief.',
     price: '₦1,450,000',
     priceNum: 1450000,
     image: ornate1,
     objectPos: 'center',
     featured: true,
-    gallery: [ornate1, ornate2, ornate3, ornate4],
-    specs: ['6-seater', 'Hand-carved ornate chairs', 'Floral fabric seat cushions', 'Table: 180 × 90cm'],
+    gallery: [ornate1],
+    specs: ['8-seater', 'Hand-carved ornate frame chairs', 'Floral fabric seat cushions', 'Table: approx. 200 × 100cm'],
   },
   {
-    id: 'marble-dining-set',
+    id: 'charcoal-marble-pedestal-dining-set',
+    name: 'Charcoal & Marble Pedestal Dining Set',
+    category: 'Home Furniture',
+    subCategory: 'Dining',
+    description: 'A bold contemporary dining set combining a round marble-top table on a sculptural gold drum pedestal with deep charcoal bucket chairs. The contrast of gold, white marble and dark upholstery makes a dramatic statement in a bright modern dining room.',
+    price: '₦1,250,000',
+    priceNum: 1250000,
+    image: charcoalPed,
+    objectPos: 'center',
+    gallery: [charcoalPed],
+    specs: ['4-seater', 'Round marble-top table', 'Gold drum pedestal base', 'Deep charcoal bucket chairs'],
+  },
+  {
+    id: 'dark-baroque-dining-set',
+    name: 'Dark Baroque Palace Dining Set',
+    category: 'Home Furniture',
+    subCategory: 'Dining',
+    description: 'A magnificent dark baroque dining suite with a solid dark walnut carved table and high-back tapestry chairs in a deep carved wood frame. Designed for palatial dining rooms and stately interiors where grandeur is non-negotiable.',
+    price: '₦1,750,000',
+    priceNum: 1750000,
+    image: darkBaroque,
+    objectPos: 'center',
+    gallery: [darkBaroque],
+    specs: ['8-seater', 'Solid dark walnut carved table', 'High-back tapestry upholstered chairs', 'Ornate carved dark wood chair frames'],
+  },
+  {
+    id: 'white-marble-barrel-chair-dining-set',
+    name: 'White Marble & Barrel Chair Dining Set',
+    category: 'Home Furniture',
+    subCategory: 'Dining',
+    description: 'A refined contemporary dining set with a white marble-top table on a sculptural walnut curved pedestal, paired with cream upholstered barrel arm chairs. The clean palette and organic forms suit minimalist, Japandi and modern luxury interiors.',
+    price: '₦980,000',
+    priceNum: 980000,
+    image: whiteMarble,
+    objectPos: 'center',
+    gallery: [whiteMarble],
+    specs: ['4-seater', 'White marble table top', 'Walnut curved pedestal base', 'Cream upholstered barrel arm chairs'],
+  },
+  {
+    id: 'marble-top-dining-set',
     name: 'Marble Top Dining Set',
     category: 'Home Furniture',
     subCategory: 'Dining',
-    description: 'A premium Italian-marble-top dining table paired with saddle-leather barrel chairs on solid walnut legs. Built for elegance, designed to entertain.',
+    description: 'A premium marble-top dining table with a wide rectangular form, paired with six taupe saddle-leather barrel chairs on solid walnut legs. The clean luxury aesthetic suits contemporary, transitional and Japandi interiors.',
     price: '₦1,800,000',
     priceNum: 1800000,
     image: marble1,
     objectPos: 'center',
-    gallery: [marble1, marble2, marble3, marble4, marble5],
-    specs: ['6-seater', 'Italian marble table top', 'Leather barrel chairs', 'Solid walnut chair legs'],
+    gallery: [marble1],
+    specs: ['6-seater', 'White marble table top', 'Taupe leather barrel chairs', 'Solid walnut chair legs'],
   },
   {
-    id: 'slatted-multicolor-dining-set',
-    name: 'Modern Slatted Multi-Color Dining Set',
+    id: 'rose-gold-marble-dining-set',
+    name: 'Rose Gold Marble Dining Set',
     category: 'Home Furniture',
     subCategory: 'Dining',
-    description: 'A contemporary 4-seater dining set with a round pedestal table and sculptural slatted-back chairs in a vibrant mix of colours. The Scandinavian-influenced design brings energy and personality to kitchen diners, compact dining rooms and home offices.',
+    description: 'A glamorous dining set featuring a marble-top table on a rose-gold drum pedestal, with matching white high-back chairs accented in rose-gold frame details. An opulent choice for luxury dining rooms and hospitality spaces.',
+    price: '₦1,550,000',
+    priceNum: 1550000,
+    image: roseGold,
+    objectPos: 'center',
+    gallery: [roseGold],
+    specs: ['6-seater', 'Marble table top', 'Rose-gold drum pedestal', 'White high-back chairs with rose-gold frame accents'],
+  },
+  {
+    id: 'dark-slatted-multicolour-dining-set',
+    name: 'Dark Slatted Multicolour Dining Set',
+    category: 'Home Furniture',
+    subCategory: 'Dining',
+    description: 'A contemporary 4-seater café-style set with a dark charcoal square table on a stainless steel pedestal base and sculptural slatted-back chairs in a vibrant mix of mint green and deep plum. A bold character piece for kitchen diners and compact dining spaces.',
+    price: '₦820,000',
+    priceNum: 820000,
+    image: darkSlatted1,
+    objectPos: 'center',
+    gallery: [darkSlatted1, darkSlatted2],
+    specs: ['4-seater', 'Dark charcoal square table top', 'Brushed steel pedestal base', 'Slatted-back chairs in mint & deep plum mix'],
+  },
+  {
+    id: 'round-marble-slatted-dining-set',
+    name: 'Round Marble Slatted Multicolour Dining Set',
+    category: 'Home Furniture',
+    subCategory: 'Dining',
+    description: 'A contemporary 4-seater dining set with a round marble-top table on a sculptural coloured pedestal and matching slatted-back chairs in a curated palette of black, white, dark brown and mint green. The Scandinavian-influenced design brings energy and personality to any dining space.',
     price: '₦950,000',
     priceNum: 950000,
-    image: slatted1,
+    image: roundSlatted1,
     objectPos: 'center',
-    gallery: [slatted1, slatted2],
-    specs: ['4-seater set', 'Multicolour slatted-back chairs', 'Round pedestal dining table', 'Contemporary Scandinavian design'],
+    gallery: [roundSlatted1, roundSlatted2],
+    specs: ['4-seater', 'Round marble table top', 'Sculptural coloured pedestal base', 'Slatted-back chairs in multicolour mix'],
+  },
+  {
+    id: 'marble-grey-barrel-dining-set',
+    name: 'Marble & Grey Barrel Chair Dining Set',
+    category: 'Home Furniture',
+    subCategory: 'Dining',
+    description: 'A refined 6-seater dining suite with a rectangular white marble table and six padded grey barrel chairs on slim black legs. Shot in a real luxury high-rise setting — the clean, understated palette works beautifully in contemporary urban interiors.',
+    price: '₦1,350,000',
+    priceNum: 1350000,
+    image: marbleBarrel,
+    objectPos: 'center',
+    gallery: [marbleBarrel],
+    specs: ['6-seater', 'White marble rectangular table', 'Padded grey barrel chairs', 'Slim black metal chair legs'],
   },
   {
     id: 'modern-shell-bar-stools',
