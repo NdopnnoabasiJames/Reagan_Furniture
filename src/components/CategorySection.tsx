@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   Home, Building2, Monitor, Wine, Utensils, Sofa,
   ChevronLeft, ChevronRight,
@@ -21,6 +22,7 @@ const SCROLL_STEP = 200;
 const CategorySection = () => {
   const [active, setActive] = useState(0);
   const trackRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
 
   const scrollTrack = (delta: number) =>
     trackRef.current?.scrollBy({ left: delta, behavior: 'smooth' });
@@ -70,7 +72,7 @@ const CategorySection = () => {
               <button
                 type="button"
                 aria-pressed={isActive}
-                onClick={() => setActive(i)}
+                onClick={() => { setActive(i); navigate(`/products?cat=${encodeURIComponent(label)}`); }}
                 className={[
                   'relative flex flex-col items-center justify-center gap-2.5 md:gap-3',
                   'rounded-xl cursor-pointer',

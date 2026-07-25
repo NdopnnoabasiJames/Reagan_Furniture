@@ -12,6 +12,26 @@ import walnutParquet2   from '../../../assets/products/home-furniture/coffee-tab
 import walnutRound      from '../../../assets/products/home-furniture/coffee-tables/walnut-round-coffee-table-set.jpeg';
 import arcTaupe         from '../../../assets/products/home-furniture/coffee-tables/sculptural-arc-coffee-table-taupe.jpeg';
 import arcGrey          from '../../../assets/products/home-furniture/coffee-tables/sculptural-arc-coffee-table-grey.jpeg';
+import multilevelMarble from '../../../assets/products/home-furniture/coffee-tables/round-multilevel-marble-glass-coffee-table.jpeg';
+import goldBallSet      from '../../../assets/products/home-furniture/coffee-tables/gold-ball-marble-coffee-table-set.jpeg';
+import greyRibbed1      from '../../../assets/products/home-furniture/coffee-tables/grey-ribbed-marble-swivel-coffee-table-1.jpeg';
+import greyRibbed2      from '../../../assets/products/home-furniture/coffee-tables/grey-ribbed-marble-swivel-coffee-table-2.jpeg';
+import darkMarble       from '../../../assets/products/home-furniture/coffee-tables/dark-marble-coffee-table.jpeg';
+import marbleGunmetal   from '../../../assets/products/home-furniture/coffee-tables/marble-gunmetal-nesting-table-set.jpeg';
+import goldLeafNesting  from '../../../assets/products/home-furniture/coffee-tables/gold-leaf-nesting-table-set.jpeg';
+
+import hf77  from '../../../assets/products/home-furniture/coffee-tables/hf-77.jpeg';
+import hf78  from '../../../assets/products/home-furniture/coffee-tables/hf-78.jpeg';
+import hf79  from '../../../assets/products/home-furniture/coffee-tables/hf-79.jpeg';
+import hf80  from '../../../assets/products/home-furniture/coffee-tables/hf-80.jpeg';
+import hf81  from '../../../assets/products/home-furniture/coffee-tables/hf-81.jpeg';
+import hf91  from '../../../assets/products/home-furniture/coffee-tables/hf-91.jpeg';
+import hf93  from '../../../assets/products/home-furniture/coffee-tables/hf-93.jpeg';
+import hf100 from '../../../assets/products/home-furniture/coffee-tables/hf-100.jpeg';
+import hf101 from '../../../assets/products/home-furniture/coffee-tables/hf-101.jpeg';
+import hf102 from '../../../assets/products/home-furniture/coffee-tables/hf-102.jpeg';
+import hf103 from '../../../assets/products/home-furniture/coffee-tables/hf-103.jpeg';
+import hf104 from '../../../assets/products/home-furniture/coffee-tables/hf-104.jpeg';
 
 export const coffeeTablesProducts: Product[] = [
   {
@@ -118,5 +138,187 @@ export const coffeeTablesProducts: Product[] = [
     objectPos: 'center',
     gallery: [arcTaupe, arcGrey],
     specs: ['Round top', 'Arched cut-out drum base', 'Available in taupe & slate grey', 'Matte lacquer finish'],
+  },
+  {
+    id: 'round-multilevel-marble-glass-coffee-table',
+    name: 'Round Multi-Level Marble & Glass Coffee Table',
+    category: 'Home Furniture',
+    subCategory: 'Tables',
+    description: 'A sophisticated round coffee table in two tiers — a lower white marble shelf and a rotating upper glass top with a gold-trimmed pull-out drawer. The multi-level design adds function and drama to contemporary and luxury living rooms.',
+    price: '₦620,000',
+    priceNum: 620000,
+    image: multilevelMarble,
+    objectPos: 'center',
+    gallery: [multilevelMarble],
+    specs: ['Two-tier design (marble shelf + glass top)', 'Rotating glass upper top', 'Pull-out storage drawer', 'Gold-trim accents'],
+  },
+  {
+    id: 'gold-ball-marble-coffee-table-set',
+    name: 'Gold Ball Cluster Marble Coffee & Side Table Set',
+    category: 'Home Furniture',
+    subCategory: 'Tables',
+    description: 'A striking 2-piece table set with white veined marble tops balanced on sculptural clusters of stacked gold balls. The coffee table and matching side table make a bold art-object statement in luxury contemporary and Hollywood Regency interiors.',
+    price: '₦450,000',
+    priceNum: 450000,
+    image: goldBallSet,
+    objectPos: 'center',
+    gallery: [goldBallSet],
+    specs: ['2-piece set (coffee table + side table)', 'White veined marble tops', 'Gold ball cluster sculptural bases', 'Available as a set'],
+  },
+  {
+    id: 'grey-ribbed-marble-swivel-coffee-table',
+    name: 'Grey Ribbed Marble Swivel Coffee Table',
+    category: 'Home Furniture',
+    subCategory: 'Tables',
+    description: 'A refined rectangular coffee table with a deep grey ribbed body and a dark marble swivel top that pivots to reveal a roomy hidden storage compartment. Functional and elegant — a standout centrepiece for modern and contemporary living rooms.',
+    price: '₦380,000',
+    priceNum: 380000,
+    image: greyRibbed1,
+    objectPos: 'center',
+    gallery: [greyRibbed1, greyRibbed2],
+    specs: ['Rectangular form', 'Dark marble swivel top', 'Deep grey ribbed body', 'Hidden storage compartment'],
+  },
+  {
+    id: 'dark-marble-coffee-table',
+    name: 'Dark Marble Top Coffee Table with Drawers',
+    category: 'Home Furniture',
+    subCategory: 'Tables',
+    description: 'A substantial coffee table with a bold dark veined marble top on a black trim frame, with two white lacquered pull-out drawers below for generous storage. A practical yet dramatic centrepiece for modern and contemporary living rooms.',
+    price: '₦280,000',
+    priceNum: 280000,
+    image: darkMarble,
+    objectPos: 'center',
+    gallery: [darkMarble],
+    specs: ['Dark veined marble top', 'Black frame & trim', 'Two pull-out storage drawers', 'Two-tier shelf design'],
+  },
+  {
+    id: 'marble-gunmetal-nesting-table-set',
+    name: 'Marble & Gunmetal Nesting Coffee Table Set',
+    category: 'Home Furniture',
+    subCategory: 'Tables',
+    description: 'A 3-piece nesting table set featuring one large oval coffee table and two round side tables — all with white veined marble tops on slim gunmetal vertical-bar cylindrical bases. A luxuriously cohesive ensemble for modern and Art Deco interiors.',
+    price: '₦680,000',
+    priceNum: 680000,
+    image: marbleGunmetal,
+    objectPos: 'center',
+    gallery: [marbleGunmetal],
+    specs: ['3-piece set (1 oval coffee + 2 round side tables)', 'White veined marble tops', 'Gunmetal vertical-bar cylindrical base', 'Nesting & stackable configuration'],
+  },
+  {
+    id: 'gold-leaf-nesting-table-set',
+    name: 'Antique Gold Leaf Nesting Coffee Table Set',
+    category: 'Home Furniture',
+    subCategory: 'Tables',
+    description: 'A glamorous 3-piece nesting table set with hammered antique gold leaf tops on tall gold cylindrical bar bases. The oval coffee table and two round side tables deliver maximum opulence for Art Deco, Hollywood Regency and luxury contemporary interiors.',
+    price: '₦720,000',
+    priceNum: 720000,
+    image: goldLeafNesting,
+    objectPos: 'center',
+    gallery: [goldLeafNesting],
+    specs: ['3-piece set (1 oval coffee + 2 round side tables)', 'Hammered antique gold leaf tops', 'Gold cylindrical vertical-bar base', 'Nesting configuration'],
+  },
+  {
+    id: 'taupe-2tier-glass-marble-coffee-table',
+    name: 'Taupe 2-Tier Glass & Marble Coffee Table',
+    category: 'Home Furniture',
+    subCategory: 'Tables',
+    description: 'A sophisticated round 2-tier coffee table in warm taupe with a tempered glass top, a white marble lower shelf and a pull-out storage drawer. The combination of glass, marble and lacquer in neutral tones suits contemporary, transitional and luxury interiors.',
+    price: '₦480,000',
+    priceNum: 480000,
+    image: hf77,
+    objectPos: 'center',
+    gallery: [hf77],
+    specs: ['Round 2-tier design', 'Tempered glass top', 'White marble lower shelf', 'Pull-out storage drawer'],
+  },
+  {
+    id: 'walnut-gold-pedestal-nesting-tables',
+    name: 'Walnut & Gold Pedestal Nesting Tables',
+    category: 'Home Furniture',
+    subCategory: 'Tables',
+    description: 'A refined 2-piece set of nesting tables with rich walnut veneer tops on sculpted gold pedestal bases. The larger piece serves as a coffee table, the smaller as an accent side table — a warm, contemporary pairing for any living room.',
+    price: '₦420,000',
+    priceNum: 420000,
+    image: hf78,
+    objectPos: 'center',
+    gallery: [hf78],
+    specs: ['2-piece nesting set (coffee + side table)', 'Walnut veneer top', 'Sculpted gold pedestal base', 'Stackable configuration'],
+  },
+  {
+    id: 'marble-gold-sphere-coffee-side-set',
+    name: 'Marble & Gold Sphere Coffee & Side Table Set',
+    category: 'Home Furniture',
+    subCategory: 'Tables',
+    description: 'A luxurious 3-piece table set with white veined marble tops balanced on gleaming gold sphere-cluster bases. Use the large oval as a coffee table and the two smaller rounds as companion side tables — a Hollywood Regency statement for any living room.',
+    price: '₦550,000',
+    priceNum: 550000,
+    image: hf79,
+    objectPos: 'center',
+    gallery: [hf79],
+    specs: ['3-piece set (1 oval + 2 round)', 'White veined marble tops', 'Gold sphere-cluster sculptural bases', 'Mixed-height configuration'],
+  },
+  {
+    id: 'grey-ribbed-square-swivel-coffee-table',
+    name: 'Grey Ribbed Square Swivel Coffee Table',
+    category: 'Home Furniture',
+    subCategory: 'Tables',
+    description: 'A bold square coffee table with a deeply ribbed grey body and a dark swivel top that pivots to reveal a generous hidden storage compartment. The studio-clean finish and geometric precision make it a standout centrepiece for modern luxury interiors.',
+    price: '₦420,000',
+    priceNum: 420000,
+    image: hf80,
+    objectPos: 'center',
+    gallery: [hf80, hf81],
+    specs: ['Square form', 'Dark swivel top with storage compartment', 'Deep grey ribbed body', 'Available in studio-white or dark-room colourways'],
+  },
+  {
+    id: 'white-marble-oval-gunmetal-nesting-set',
+    name: 'White Marble Oval & Gunmetal Bar Nesting Set',
+    category: 'Home Furniture',
+    subCategory: 'Tables',
+    description: 'A 3-piece nesting set featuring a large white marble oval coffee table and two matching round side tables, all mounted on slim gunmetal vertical-bar cylindrical bases. A cohesive, architectural ensemble for Art Deco and modern luxury living rooms.',
+    price: '₦680,000',
+    priceNum: 680000,
+    image: hf91,
+    objectPos: 'center',
+    gallery: [hf91],
+    specs: ['3-piece set (1 oval coffee + 2 round side tables)', 'White veined marble tops', 'Slim gunmetal vertical-bar base', 'Nesting configuration'],
+  },
+  {
+    id: 'gold-oval-bar-nesting-table-set',
+    name: 'Gold Oval & Bar Nesting Coffee Table Set',
+    category: 'Home Furniture',
+    subCategory: 'Tables',
+    description: 'A glamorous 3-piece nesting set with oval and round gold-finish marble tops on slim gold vertical-bar bases. The antique gold finish and marble combination deliver maximum opulence for Art Deco, Hollywood Regency and luxury living rooms.',
+    price: '₦720,000',
+    priceNum: 720000,
+    image: hf93,
+    objectPos: 'center',
+    gallery: [hf93],
+    specs: ['3-piece set (1 oval coffee + 2 round side tables)', 'Gold-finish marble tops', 'Slim gold vertical-bar base', 'Nesting configuration'],
+  },
+  {
+    id: 'black-swivel-glass-coffee-table',
+    name: 'Black Swivel Glass-Top Coffee Table',
+    category: 'Home Furniture',
+    subCategory: 'Tables',
+    description: 'A contemporary round coffee table with a black lacquered body and a rotating glass top that swivels to reveal a spacious hidden storage compartment. The companion side table nests alongside for a complete living room table solution.',
+    price: '₦380,000',
+    priceNum: 380000,
+    image: hf100,
+    objectPos: 'center',
+    gallery: [hf100, hf101],
+    specs: ['Round design with swivel glass top', 'Black lacquer body', 'Hidden storage compartment', 'Companion side table included'],
+  },
+  {
+    id: 'walnut-starburst-marquetry-nesting-tables',
+    name: 'Walnut Starburst Marquetry Nesting Tables',
+    category: 'Home Furniture',
+    subCategory: 'Tables',
+    description: 'A 2-piece set of square nesting tables with a stunning starburst walnut marquetry inlay top and a pale cream curved base. Available as square or round — the organic warmth of real walnut grain makes these an artisanal centrepiece for any contemporary living room.',
+    price: '₦620,000',
+    priceNum: 620000,
+    image: hf102,
+    objectPos: 'center',
+    gallery: [hf102, hf103, hf104],
+    specs: ['Set of 2 nesting tables (square or round)', 'Walnut starburst marquetry inlay top', 'Cream/ivory curved base', 'Stackable design'],
   },
 ];

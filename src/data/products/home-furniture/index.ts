@@ -10,6 +10,7 @@ import { tvConsolesProducts }   from './tv-consoles';
 import { armchairsProducts }    from './armchairs';
 import { mattressesProducts }   from './mattresses';
 import { livingRoomSetsProducts } from './living-room-sets';
+import { bedroomProducts }      from './bedroom';
 
 export const homeFurnitureProducts = [
   ...armchairsProducts,
@@ -21,4 +22,5 @@ export const homeFurnitureProducts = [
   ...tvConsolesProducts,
   ...mattressesProducts,
   ...livingRoomSetsProducts,
+  ...bedroomProducts,
 ];

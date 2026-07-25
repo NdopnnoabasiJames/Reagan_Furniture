@@ -53,7 +53,7 @@ const Footer = () => (
           </a>
 
           {/* Description */}
-          <p className="text-gray-500 text-[15.5px] leading-[1.8] mb-6" style={{ maxWidth: '260px' }}>
+          <p className="text-gray-500 text-[15.5px] lg:text-[17px] leading-[1.8] mb-6" style={{ maxWidth: '260px' }}>
             Premium furniture and electronics for homes and offices in Akwa Ibom and beyond.
           </p>
 
@@ -112,7 +112,7 @@ const Footer = () => (
           <ul className="space-y-3 md:space-y-4">
             {PRODUCTS.map(item => (
               <li key={item}>
-                <a href="#" className="text-gray-500 text-[16px] hover:text-gray-800 transition-colors">
+                <a href="#" className="text-gray-500 text-[16px] lg:text-[17px] hover:text-gray-800 transition-colors">
                   {item}
                 </a>
               </li>
@@ -131,7 +131,7 @@ const Footer = () => (
           <ul className="space-y-3 md:space-y-4">
             {COMPANY.map(item => (
               <li key={item}>
-                <a href="#" className="text-gray-500 text-[16px] hover:text-gray-800 transition-colors">
+                <a href="#" className="text-gray-500 text-[16px] lg:text-[17px] hover:text-gray-800 transition-colors">
                   {item}
                 </a>
               </li>
@@ -150,15 +150,15 @@ const Footer = () => (
           <ul className="space-y-4 md:space-y-5">
             <li className="flex items-center gap-3">
               <Phone size={15} className="text-gray-500 shrink-0" />
-              <span className="text-gray-500 text-[16px]">(+234)8 068 413 700</span>
+              <span className="text-gray-500 text-[16px] lg:text-[17px]">(+234)8 068 413 700</span>
             </li>
             <li className="flex items-center gap-3">
               <Mail size={15} className="text-gray-500 shrink-0" />
-              <span className="text-gray-500 text-[16px] break-all">reaganstoresng@gmail.com</span>
+              <span className="text-gray-500 text-[16px] lg:text-[17px] break-all">reaganstoresng@gmail.com</span>
             </li>
             <li className="flex items-start gap-3">
               <MapPin size={15} className="text-gray-500 shrink-0 mt-0.5" />
-              <span className="text-gray-500 text-[16px] leading-snug">
+              <span className="text-gray-500 text-[16px] lg:text-[17px] leading-snug">
                 # Aka road Uyo, Akwa Ibom State
               </span>
             </li>
@@ -171,7 +171,7 @@ const Footer = () => (
 
       {/* Copyright */}
       <div className="pt-5 md:pt-6">
-        <p className="text-gray-500 text-[14.5px]">
+        <p className="text-gray-500 text-[14.5px] lg:text-[16px]">
           © 2024 Reagan Furniture &amp; Electronics. All rights reserved.
         </p>
       </div>

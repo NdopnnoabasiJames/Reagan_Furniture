@@ -63,11 +63,11 @@ const ProductGrid = ({
     {/* Empty state */}
     {totalFiltered === 0 && (
       <div className="py-20 text-center">
-        <p className="text-[16px] text-gray-500">No products match your search.</p>
+        <p className="text-[16px] lg:text-[17px] text-gray-500">No products match your search.</p>
         <button
           type="button"
           onClick={onClear}
-          className="mt-3 text-[13px] text-[#5B50D6] font-semibold hover:underline uppercase tracking-[0.1em]"
+          className="mt-3 text-[13px] lg:text-[14.5px] text-[#5B50D6] font-semibold hover:underline uppercase tracking-[0.1em]"
         >
           Clear search
         </button>

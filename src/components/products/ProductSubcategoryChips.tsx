@@ -16,7 +16,7 @@ const ProductSubcategoryChips = ({ selected, onToggle }: ProductSubcategoryChips
             key={sub}
             type="button"
             onClick={() => onToggle(sub)}
-            className={`text-[12px] font-semibold uppercase tracking-[0.1em] px-4 py-[7px] rounded-full border transition-all duration-150 ${
+            className={`text-[12px] lg:text-[13px] font-semibold uppercase tracking-[0.1em] px-4 py-[7px] rounded-full border transition-all duration-150 ${
               active
                 ? 'bg-[#5B50D6] border-[#5B50D6] text-white'
                 : 'bg-white border-gray-300 text-gray-500 hover:border-[#5B50D6] hover:text-[#5B50D6]'

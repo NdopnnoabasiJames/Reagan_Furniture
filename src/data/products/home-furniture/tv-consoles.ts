@@ -3,8 +3,15 @@ import type { Product } from '../types';
 import marbleConsole1 from '../../../assets/products/home-furniture/tv-consoles/marble-top-coffee-table-tv-console-1.jpeg';
 import marbleConsole2 from '../../../assets/products/home-furniture/tv-consoles/marble-top-coffee-table-tv-console-2.jpeg';
 import whiteGold      from '../../../assets/products/home-furniture/tv-consoles/white-gold-coffee-table-tv-stand.jpeg';
+import whiteGold2     from '../../../assets/products/home-furniture/tv-consoles/white-gold-coffee-table-tv-stand-2.jpeg';
 import whiteArc       from '../../../assets/products/home-furniture/tv-consoles/white-arc-coffee-table-tv-stand.jpeg';
 import whiteSilver    from '../../../assets/products/home-furniture/tv-consoles/white-silver-coffee-table-tv-unit.jpeg';
+
+import hf85 from '../../../assets/products/home-furniture/tv-consoles/hf-85.jpeg';
+import hf86 from '../../../assets/products/home-furniture/tv-consoles/hf-86.jpeg';
+import hf88 from '../../../assets/products/home-furniture/tv-consoles/hf-88.jpeg';
+import hf89 from '../../../assets/products/home-furniture/tv-consoles/hf-89.jpeg';
+import hf90 from '../../../assets/products/home-furniture/tv-consoles/hf-90.jpeg';
 
 export const tvConsolesProducts: Product[] = [
   {
@@ -30,7 +37,7 @@ export const tvConsolesProducts: Product[] = [
     priceNum: 680000,
     image: whiteGold,
     objectPos: 'center',
-    gallery: [whiteGold],
+    gallery: [whiteGold, whiteGold2],
     specs: ['2-piece set (coffee table + TV stand)', 'White gloss body with gold accents', 'Tempered glass coffee table top', 'TV unit fits up to 60" TV'],
   },
   {
@@ -43,7 +50,7 @@ export const tvConsolesProducts: Product[] = [
     priceNum: 620000,
     image: whiteArc,
     objectPos: 'center',
-    gallery: [whiteArc],
+    gallery: [whiteArc, hf88],
     specs: ['2-piece set (coffee table + TV stand)', 'White gloss with arc-pattern doors', 'Open shelving + drawer storage', 'TV stand fits up to 60" TV'],
   },
   {
@@ -58,5 +65,31 @@ export const tvConsolesProducts: Product[] = [
     objectPos: 'center',
     gallery: [whiteSilver],
     specs: ['2-piece set (lift-top coffee table + TV unit)', 'White gloss with silver handles', 'Lift-top coffee table with hidden storage', 'Glass-door display storage'],
+  },
+  {
+    id: 'white-gloss-marble-tv-coffee-set',
+    name: 'White Gloss & Dark Marble TV Console Set',
+    category: 'Home Furniture',
+    subCategory: 'TV Consoles',
+    description: 'A matching 2-piece living room set featuring a white gloss coffee table and TV console with a dark marble effect top and arc-wave textured front panels. The combination of high-gloss white and dark stone creates a striking contemporary contrast.',
+    price: '₦680,000',
+    priceNum: 680000,
+    image: hf85,
+    objectPos: 'center',
+    gallery: [hf85, hf89],
+    specs: ['2-piece set (coffee table + TV console)', 'White gloss with dark marble-effect top', 'Arc-wave textured front panels', 'TV console fits up to 65" TV'],
+  },
+  {
+    id: 'white-gold-bar-accent-tv-set',
+    name: 'White & Gold Vertical Bar Accent TV Set',
+    category: 'Home Furniture',
+    subCategory: 'TV Consoles',
+    description: 'A refined 2-piece living room set with a white gloss coffee table and matching TV console unit, both featuring a signature gold vertical-bar accent panel. The clean white body and gold detail create a luxurious yet understated look for contemporary interiors.',
+    price: '₦720,000',
+    priceNum: 720000,
+    image: hf86,
+    objectPos: 'center',
+    gallery: [hf86, hf90],
+    specs: ['2-piece set (coffee table + TV console)', 'White gloss body', 'Gold vertical-bar accent panel', 'TV console fits up to 65" TV'],
   },
 ];

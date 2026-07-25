@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useCallback, useRef } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -32,23 +32,25 @@ const ProductsPage = () => {
       : 'All';
   })();
 
-  const page         = Math.max(1, Number(searchParams.get('page')) || 1);
-  const searchActive = searchParams.get('q') ?? '';
+  const urlPage      = Math.max(1, Number(searchParams.get('page')) || 1);
   const selectedSubs: HomeFurnitureSubCategory[] = useMemo(() => {
     const raw = searchParams.get('sub');
     if (!raw || activeTab !== 'Home Furniture') return [];
     return raw.split(',').filter(Boolean) as HomeFurnitureSubCategory[];
   }, [searchParams, activeTab]);
 
-  // Pending search input — resynced on URL navigation
-  const [searchInput, setSearchInput] = useState(searchActive);
+  const [searchInput, setSearchInput] = useState(searchParams.get('q') ?? '');
   const [viewMode, setViewMode]       = useState<'grid' | 'list'>('grid');
+  // True only when the user has explicitly typed — never set by URL sync or mount.
+  const userDidTypeRef = useRef(false);
 
+  // Sync input when URL changes externally (back/forward navigation).
+  // Does NOT set userDidTypeRef, so the debounce below ignores these updates.
   useEffect(() => {
     setSearchInput(searchParams.get('q') ?? '');
   }, [searchParams]);
 
-  const patchParams = (updates: Record<string, string>) => {
+  const patchParams = useCallback((updates: Record<string, string>) => {
     setSearchParams(prev => {
       const next = new URLSearchParams(prev);
       Object.entries(updates).forEach(([k, v]) => {
@@ -56,15 +58,38 @@ const ProductsPage = () => {
       });
       return next;
     });
-  };
+  }, [setSearchParams]);
+
+  // Debounce URL sync for search.
+  // Guard: returns immediately on mount and on URL-driven sync — only fires
+  // when the user has actually typed (userDidTypeRef is true).
+  useEffect(() => {
+    if (!userDidTypeRef.current) return;
+    const t = setTimeout(() => {
+      userDidTypeRef.current = false;
+      setSearchParams(prev => {
+        const next = new URLSearchParams(prev);
+        if (searchInput) next.set('q', searchInput); else next.delete('q');
+        next.delete('page');
+        return next;
+      });
+    }, 250);
+    return () => clearTimeout(t);
+  }, [searchInput, setSearchParams]);
+
+  // Passed to ProductSearch — sets the flag so the debounce knows this is a real keystroke.
+  const handleSearchChange = useCallback((v: string) => {
+    userDidTypeRef.current = true;
+    setSearchInput(v);
+  }, []);
 
   const filtered = useMemo(() => {
     let list = activeTab === 'All' ? PRODUCTS : PRODUCTS.filter(p => p.category === activeTab);
     if (activeTab === 'Home Furniture' && selectedSubs.length > 0) {
       list = list.filter(p => p.subCategory && selectedSubs.includes(p.subCategory));
     }
-    if (searchActive) {
-      const q = searchActive.toLowerCase();
+    if (searchInput) {
+      const q = searchInput.toLowerCase();
       list = list.filter(p =>
         p.name.toLowerCase().includes(q) ||
         p.category.toLowerCase().includes(q) ||
@@ -72,10 +97,11 @@ const ProductsPage = () => {
       );
     }
     return list;
-  }, [activeTab, selectedSubs, searchActive]);
+  }, [activeTab, selectedSubs, searchInput]);
 
-  const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
-  const visible    = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+  const totalPages  = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
+  const currentPage = Math.min(urlPage, totalPages);
+  const visible     = filtered.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
 
   const handleTabSelect = (tab: ActiveCat) => {
     patchParams({ cat: tab === 'All' ? '' : tab, page: '', sub: '' });
@@ -88,17 +114,13 @@ const ProductsPage = () => {
     patchParams({ sub: next.join(','), page: '' });
   };
 
-  const handleSearch = () => {
-    patchParams({ q: searchInput, page: '' });
-  };
-
   const handleClear = () => {
     setSearchParams({});
     setSearchInput('');
   };
 
   const handlePageChange = (n: number) => {
-    patchParams({ page: String(n) });
+    patchParams({ page: n > 1 ? String(n) : '' });
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -125,7 +147,7 @@ const ProductsPage = () => {
           >
             Our Collection
           </h1>
-          <p className="text-[15.5px] text-gray-500 leading-[1.85]" style={{ maxWidth: '420px' }}>
+          <p className="text-[15.5px] lg:text-[17px] text-gray-500 leading-[1.85]" style={{ maxWidth: '420px' }}>
             Reagan carefully curates furniture and electronics to bring quality,
             comfort and modern style to every home and office across Nigeria.
           </p>
@@ -141,7 +163,7 @@ const ProductsPage = () => {
       )}
 
       {/* ── Search bar ────────────────────────────────────────────────── */}
-      <ProductSearch value={searchInput} onChange={setSearchInput} onSearch={handleSearch} />
+      <ProductSearch value={searchInput} onChange={handleSearchChange} />
 
       {/* ── Product grid ──────────────────────────────────────────────── */}
       <div className="min-h-[60vh] px-8 sm:px-12 md:px-16 lg:px-20 xl:px-24 py-8" style={{ backgroundColor: '#F5F4F1' }}>
@@ -154,7 +176,7 @@ const ProductsPage = () => {
           onNavigate={id => navigate(`/products/${id}`)}
           onEnquire={id => navigate(`/contact?pid=${id}`)}
         />
-        <ProductPagination page={page} totalPages={totalPages} onPageChange={handlePageChange} />
+        <ProductPagination page={currentPage} totalPages={totalPages} onPageChange={handlePageChange} />
       </div>
 
       <Footer />

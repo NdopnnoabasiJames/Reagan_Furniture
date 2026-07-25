@@ -48,22 +48,22 @@ export const ProductCardGrid = ({ product: p, delay = 0, onNavigate, onEnquire }
       </div>
 
       <div className="p-5">
-        <p className="text-[11.5px] uppercase tracking-[0.18em] text-gray-400 mb-1.5">{p.category}</p>
+        <p className="text-[11.5px] lg:text-[13px] uppercase tracking-[0.18em] text-gray-400 mb-1.5">{p.category}</p>
         <h3
           className="text-[16px] font-semibold text-gray-900 mb-2 leading-snug"
           style={{ fontFamily: SERIF }}
         >
           {p.name}
         </h3>
-        <p className="text-[14.5px] text-gray-500 leading-[1.65] mb-4 line-clamp-2">{p.description}</p>
+        <p className="text-[14.5px] lg:text-[16px] text-gray-500 leading-[1.65] mb-4 line-clamp-2">{p.description}</p>
         <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-          <span className="text-[15px] font-bold text-gray-900" style={{ fontFamily: SERIF }}>{p.price}</span>
+          <span className="text-[15px] lg:text-[17px] font-bold text-gray-900" style={{ fontFamily: SERIF }}>{p.price}</span>
           <button
             type="button"
             onClick={e => { e.stopPropagation(); onEnquire(p.id); }}
-            className="text-[12px] uppercase tracking-[0.14em] font-semibold text-gray-500 hover:text-[#5B50D6] transition-colors flex items-center gap-1"
+            className="text-[12px] lg:text-[13px] uppercase tracking-[0.14em] font-semibold text-gray-500 hover:text-[#5B50D6] transition-colors flex items-center gap-1"
           >
-            Enquire <span className="text-[14px]">→</span>
+            Enquire <span className="text-[14px] lg:text-[15px]">→</span>
           </button>
         </div>
       </div>
@@ -88,17 +88,17 @@ export const ProductCardList = ({ product: p, onNavigate, onEnquire }: ProductCa
       />
     </div>
     <div className="flex-1 p-5 flex flex-col justify-center">
-      <p className="text-[11.5px] uppercase tracking-[0.18em] text-gray-400 mb-1">{p.category}</p>
+      <p className="text-[11.5px] lg:text-[13px] uppercase tracking-[0.18em] text-gray-400 mb-1">{p.category}</p>
       <h3 className="text-[16px] font-semibold text-gray-900 mb-1.5 leading-snug" style={{ fontFamily: SERIF }}>
         {p.name}
       </h3>
-      <p className="text-[14.5px] text-gray-500 leading-[1.65] mb-3 line-clamp-2">{p.description}</p>
+      <p className="text-[14.5px] lg:text-[16px] text-gray-500 leading-[1.65] mb-3 line-clamp-2">{p.description}</p>
       <div className="flex items-center justify-between">
-        <span className="text-[15px] font-bold text-gray-900" style={{ fontFamily: SERIF }}>{p.price}</span>
+        <span className="text-[15px] lg:text-[17px] font-bold text-gray-900" style={{ fontFamily: SERIF }}>{p.price}</span>
         <button
           type="button"
           onClick={e => { e.stopPropagation(); onEnquire(p.id); }}
-          className="text-[12px] uppercase tracking-[0.14em] font-semibold text-gray-500 hover:text-[#5B50D6] transition-colors flex items-center gap-1"
+          className="text-[12px] lg:text-[13px] uppercase tracking-[0.14em] font-semibold text-gray-500 hover:text-[#5B50D6] transition-colors flex items-center gap-1"
         >
           Enquire <span>→</span>
         </button>

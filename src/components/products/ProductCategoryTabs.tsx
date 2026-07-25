@@ -28,7 +28,7 @@ const ProductCategoryTabs = ({ activeTab, onSelect, counts }: ProductCategoryTab
             key={key}
             type="button"
             onClick={() => onSelect(key)}
-            className={`shrink-0 flex items-center gap-2 px-4 xl:px-5 py-[14px] text-[12.5px] font-semibold uppercase tracking-[0.11em] whitespace-nowrap border-b-2 transition-colors duration-150 ${
+            className={`shrink-0 flex items-center gap-2 px-4 xl:px-5 py-[14px] text-[12.5px] lg:text-[13.5px] font-semibold uppercase tracking-[0.11em] whitespace-nowrap border-b-2 transition-colors duration-150 ${
               activeTab === key
                 ? 'border-[#5B50D6] text-[#5B50D6]'
                 : 'border-transparent text-gray-500 hover:text-gray-700'

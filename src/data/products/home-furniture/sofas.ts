@@ -22,6 +22,12 @@ import silverBaroque2 from '../../../assets/products/home-furniture/sofas/silver
 import silverBaroque3 from '../../../assets/products/home-furniture/sofas/silver-neo-baroque-sofa-suite-3.jpeg';
 import blackEmpire   from '../../../assets/products/home-furniture/sofas/black-empire-baroque-sofa-suite.jpeg';
 import taupeSofa     from '../../../assets/products/home-furniture/sofas/taupe-luxury-sofa-set.jpeg';
+import goldBaroque   from '../../../assets/products/home-furniture/sofas/gold-baroque-tufted-sofa-suite.jpeg';
+import goldBaroqueChair from '../../../assets/products/home-furniture/armchairs/royal-baroque-armchair.jpeg';
+
+import hf75 from '../../../assets/products/home-furniture/sofas/hf-75.jpeg';
+import hf76 from '../../../assets/products/home-furniture/sofas/hf-76.jpeg';
+import hf84 from '../../../assets/products/home-furniture/sofas/hf-84.jpeg';
 
 export const sofasProducts: Product[] = [
   {
@@ -144,5 +150,58 @@ export const sofasProducts: Product[] = [
     featured: true,
     gallery: [taupeSofa],
     specs: ['3-seater sofa + 2 accent chairs', 'Premium taupe fabric upholstery', 'Brushed gold accent legs', 'Deep loose cushion seating'],
+  },
+  {
+    id: 'gold-baroque-tufted-sofa-suite',
+    name: 'Gold Baroque Tufted Sofa Suite',
+    category: 'Home Furniture',
+    subCategory: 'Sofas',
+    description: 'A palatial 4-piece sofa suite in champagne velvet with ornate gold-leaf carved frames and deep button-tufting throughout. Includes a grand 3-seater, loveseat and two armchairs — the ultimate statement for formal reception rooms, manor lobbies and prestige residential interiors.',
+    price: '₦8,500,000',
+    priceNum: 8500000,
+    image: goldBaroque,
+    objectPos: 'center',
+    gallery: [goldBaroque, goldBaroqueChair],
+    specs: ['4-piece set (sofa + loveseat + 2 armchairs)', 'Champagne velvet button-tufted upholstery', 'Gold-leaf carved baroque frame', 'Scrolled arms & cabriole legs'],
+  },
+  {
+    id: 'black-baroque-palace-sofa-suite',
+    name: 'Black Baroque Palace Sofa Suite',
+    category: 'Home Furniture',
+    subCategory: 'Sofas',
+    description: 'A palatial 5-piece black velvet baroque sofa suite with hand-carved silver-leaf frames, deep button-tufting and scrolled cabriole legs. Photographed in a grand reception room — the ultimate statement for hotel lobbies, stately homes and prestige reception areas.',
+    price: '₦14,500,000',
+    priceNum: 14500000,
+    image: hf75,
+    objectPos: 'center',
+    featured: true,
+    gallery: [hf75],
+    specs: ['5-piece suite (sofa + loveseat + 3 armchairs)', 'Deep black velvet upholstery', 'Hand-carved silver-leaf baroque frame', 'Deep button-tufted back & seat'],
+  },
+  {
+    id: 'taupe-gold-villa-sofa-set',
+    name: 'Taupe & Gold Villa Sofa Set',
+    category: 'Home Furniture',
+    subCategory: 'Sofas',
+    description: 'A sumptuous 4-piece taupe fabric sofa set with gold monogram-embossed cushions and brushed gold capped legs. The generous proportions and plush cushioning make it the premier choice for luxury villas, penthouses and hospitality lounges.',
+    price: '₦5,800,000',
+    priceNum: 5800000,
+    image: hf76,
+    objectPos: 'center',
+    gallery: [hf76],
+    specs: ['4-piece set (sofa + 2 armchairs + chaise)', 'Taupe premium fabric upholstery', 'Gold-capped decorative legs', 'Gold monogram accent cushions included'],
+  },
+  {
+    id: 'french-baroque-champagne-sofa-suite',
+    name: 'French Baroque Champagne Silk Sofa Suite',
+    category: 'Home Furniture',
+    subCategory: 'Sofas',
+    description: 'A grand French baroque sofa suite in champagne silk with ornate gold-leaf carved frames throughout. The swept scrolled arms, carved crest rails and cabriole legs on every piece elevate this to museum-quality furnishing for palatial residences and luxury hotel suites.',
+    price: '₦18,000,000',
+    priceNum: 18000000,
+    image: hf84,
+    objectPos: 'center',
+    gallery: [hf84],
+    specs: ['Multi-piece baroque suite', 'Champagne silk upholstery', 'Ornate gold-leaf carved frames', 'Swept scrolled arms & carved crest rails'],
   },
 ];

@@ -12,6 +12,20 @@ import roundSlatted1  from '../../../assets/products/home-furniture/dining/round
 import roundSlatted2  from '../../../assets/products/home-furniture/dining/round-marble-slatted-dining-set-2.jpeg';
 import marbleBarrel   from '../../../assets/products/home-furniture/dining/marble-grey-barrel-dining-set.jpeg';
 import barStools      from '../../../assets/products/home-furniture/dining/modern-shell-bar-stools.jpeg';
+import roundBlackSet  from '../../../assets/products/home-furniture/dining/round-black-modern-dining-set.jpeg';
+import whiteGoldGeo   from '../../../assets/products/home-furniture/dining/white-gold-geometric-dining-set.jpeg';
+import marbleGoldU    from '../../../assets/products/home-furniture/dining/marble-gold-u-base-dining-set.jpeg';
+import darkBaroqueLeather from '../../../assets/products/home-furniture/dining/dark-baroque-leather-dining-set.jpeg';
+import brownMarbleWalnut  from '../../../assets/products/home-furniture/dining/brown-marble-walnut-dining-set.jpeg';
+
+import hf82 from '../../../assets/products/home-furniture/dining/hf-82.jpeg';
+import hf83 from '../../../assets/products/home-furniture/dining/hf-83.jpeg';
+import hf92 from '../../../assets/products/home-furniture/dining/hf-92.jpeg';
+import hf94 from '../../../assets/products/home-furniture/dining/hf-94.jpeg';
+import hf96 from '../../../assets/products/home-furniture/dining/hf-96.jpeg';
+import hf97 from '../../../assets/products/home-furniture/dining/hf-97.jpeg';
+import hf98 from '../../../assets/products/home-furniture/dining/hf-98.jpeg';
+import hf99 from '../../../assets/products/home-furniture/dining/hf-99.jpeg';
 
 export const diningProducts: Product[] = [
   {
@@ -144,5 +158,123 @@ export const diningProducts: Product[] = [
     objectPos: 'center',
     gallery: [barStools],
     specs: ['Available in red, grey and charcoal', 'Moulded polypropylene seat shell', 'Powder-coated black wire base', 'Counter height (65cm seat)'],
+  },
+  {
+    id: 'round-black-modern-dining-set',
+    name: 'Round Black Modern Dining Set',
+    category: 'Home Furniture',
+    subCategory: 'Dining',
+    description: 'A contemporary 4-seater dining set with a round perforated black table top on a star-base pedestal and four matching grey polypropylene armchairs. Lightweight, modern and versatile — suits kitchen diners, compact dining rooms and indoor-outdoor spaces.',
+    price: '₦750,000',
+    priceNum: 750000,
+    image: roundBlackSet,
+    objectPos: 'center',
+    gallery: [roundBlackSet],
+    specs: ['4-seater', 'Round perforated black table top', 'Star-base pedestal', 'Grey polypropylene armchairs'],
+  },
+  {
+    id: 'white-gold-geometric-dining-set',
+    name: 'White & Gold Geometric Base Dining Set',
+    category: 'Home Furniture',
+    subCategory: 'Dining',
+    description: 'An elegant 6-seater dining set with a white high-gloss rectangular table on a sculptural geometric gold angled-bar base, paired with six tall-back chairs in brown croc-embossed leather with chrome steel frames. A glamorous yet refined choice for formal dining rooms.',
+    price: '₦1,450,000',
+    priceNum: 1450000,
+    image: whiteGoldGeo,
+    objectPos: 'center',
+    gallery: [whiteGoldGeo, hf94],
+    specs: ['6-seater', 'White gloss rectangular table top', 'Geometric gold angled-bar base', 'Croc-embossed leather & chrome frame chairs'],
+  },
+  {
+    id: 'marble-gold-u-base-dining-set',
+    name: 'Marble & Gold U-Base Dining Set',
+    category: 'Home Furniture',
+    subCategory: 'Dining',
+    description: 'A dramatic 6-seater dining set featuring a large marble-top table on a pair of polished gold U-arch pedestals, paired with six sleek black barrel chairs with brushed gold waist band accents and gold-tipped legs. Effortlessly luxurious for contemporary formal dining.',
+    price: '₦1,600,000',
+    priceNum: 1600000,
+    image: marbleGoldU,
+    objectPos: 'center',
+    featured: true,
+    gallery: [marbleGoldU, hf96],
+    specs: ['6-seater', 'Marble top table', 'Gold U-arch pedestal base', 'Black barrel chairs with gold accent band'],
+  },
+  {
+    id: 'dark-baroque-leather-dining-set',
+    name: 'Dark Baroque Leather Dining Set',
+    category: 'Home Furniture',
+    subCategory: 'Dining',
+    description: 'A stately 6-seater baroque dining suite with a dark lacquer table on hand-carved cabriole legs and six ornate tall-back chairs with button-tufted brown leather seats and gold-carved crest rails. An heirloom-quality statement for formal dining rooms and manor interiors.',
+    price: '₦1,850,000',
+    priceNum: 1850000,
+    image: darkBaroqueLeather,
+    objectPos: 'center',
+    gallery: [darkBaroqueLeather, hf97],
+    specs: ['6-seater', 'Dark lacquer table with carved cabriole legs', 'Button-tufted brown leather seat & back', 'Gold-carved crest rail & frame detail'],
+  },
+  {
+    id: 'brown-marble-walnut-dining-set',
+    name: 'Brown Marble & Walnut Dining Set',
+    category: 'Home Furniture',
+    subCategory: 'Dining',
+    description: 'A sophisticated 6-seater dining set with a brown marble-top table on a fluted walnut pyramid base, paired with six modern upholstered chairs in a mix of cream and taupe with gold-tipped black legs. A warm, contemporary centrepiece for stylish dining rooms.',
+    price: '₦1,200,000',
+    priceNum: 1200000,
+    image: brownMarbleWalnut,
+    objectPos: 'center',
+    gallery: [brownMarbleWalnut],
+    specs: ['6-seater', 'Brown marble rectangular table top', 'Fluted walnut pyramid base', 'Mixed cream & taupe upholstered chairs'],
+  },
+  {
+    id: 'mint-pedestal-marble-barrel-dining-set',
+    name: 'Mint Pedestal Marble & Barrel Chair Dining Set',
+    category: 'Home Furniture',
+    subCategory: 'Dining',
+    description: 'A fresh, contemporary 4-seater dining set with a marble-top table on a sculptural mint green pedestal base, paired with four mixed slatted barrel chairs in complementary tones. A vibrant accent piece for open-plan dining rooms and kitchen diners.',
+    price: '₦920,000',
+    priceNum: 920000,
+    image: hf82,
+    objectPos: 'center',
+    gallery: [hf82, hf83],
+    specs: ['4-seater', 'Marble-top table', 'Mint green sculptural pedestal base', 'Mixed slatted barrel armchairs'],
+  },
+  {
+    id: 'orange-sage-velvet-cafe-dining-set',
+    name: 'Orange & Sage Velvet Café Dining Set',
+    category: 'Home Furniture',
+    subCategory: 'Dining',
+    description: 'A chic 4-seater café dining set with marble-top tables on fluted pedestals and four velvet barrel chairs in a bold mix of burnt orange and sage green. The Parisian brasserie aesthetic suits kitchen diners, compact dining rooms and café-style breakfasts.',
+    price: '₦750,000',
+    priceNum: 750000,
+    image: hf92,
+    objectPos: 'center',
+    gallery: [hf92],
+    specs: ['4-seater set', 'Marble-top tables on fluted pedestals', 'Velvet barrel chairs in orange & sage', 'Compact café-style dimensions'],
+  },
+  {
+    id: 'black-lattice-cafe-dining-set',
+    name: 'Black Square Café Table & Mixed Lattice Chair Set',
+    category: 'Home Furniture',
+    subCategory: 'Dining',
+    description: 'A contemporary 4-seater café-style dining set with a square black table on a metal pedestal base and four mixed sculptural lattice chairs in an eclectic blend of colours. Ideal for kitchen diners, compact dining areas and indoor-outdoor versatile spaces.',
+    price: '₦580,000',
+    priceNum: 580000,
+    image: hf98,
+    objectPos: 'center',
+    gallery: [hf98],
+    specs: ['4-seater', 'Square black pedestal table', 'Mixed sculptural lattice chairs', 'Lightweight & easy to rearrange'],
+  },
+  {
+    id: 'walnut-fluted-pyramid-dining-set',
+    name: 'Walnut Fluted-Pyramid Dining Set with Mixed Leather Chairs',
+    category: 'Home Furniture',
+    subCategory: 'Dining',
+    description: 'A sophisticated 6-seater dining set with a walnut wood-grain rectangular table on a distinctive fluted pyramid base, paired with six mixed-leather chairs in cream and tan on black gold-tipped legs. A warm, contemporary centrepiece for stylish dining rooms.',
+    price: '₦1,380,000',
+    priceNum: 1380000,
+    image: hf99,
+    objectPos: 'center',
+    gallery: [hf99],
+    specs: ['6-seater', 'Walnut wood-grain rectangular table', 'Fluted pyramid decorative base', 'Mixed cream & tan leather chairs with gold-tipped legs'],
   },
 ];

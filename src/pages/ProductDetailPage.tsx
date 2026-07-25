@@ -53,7 +53,7 @@ const ProductDetailPage = () => {
       <main className="bg-white py-10 md:py-16 px-8 sm:px-12 md:px-16 lg:px-20 xl:px-24">
 
         {/* Breadcrumb */}
-        <nav className="flex items-center gap-2 text-[13.5px] text-gray-400 uppercase tracking-[0.12em] mb-10">
+        <nav className="flex items-center gap-2 text-[13.5px] lg:text-[15px] text-gray-400 uppercase tracking-[0.12em] mb-10">
           <Link to="/" className="hover:text-gray-700 transition-colors">Home</Link>
           <span>/</span>
           <Link to="/products" className="hover:text-gray-700 transition-colors">Products</Link>
@@ -154,7 +154,7 @@ const ProductDetailPage = () => {
           <div className="flex-1 flex flex-col">
 
             {/* Category */}
-            <p className="text-[12.5px] uppercase tracking-[0.18em] text-gray-400 mb-3">
+            <p className="text-[12.5px] lg:text-[14px] uppercase tracking-[0.18em] text-gray-400 mb-3">
               {product.category}
             </p>
 
@@ -173,7 +173,7 @@ const ProductDetailPage = () => {
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                 </svg>
               ))}
-              <span className="text-[14px] text-gray-400 ml-1">(5.0)</span>
+              <span className="text-[14px] lg:text-[15px] text-gray-400 ml-1">(5.0)</span>
             </div>
 
             {/* Price */}
@@ -185,19 +185,19 @@ const ProductDetailPage = () => {
             </div>
 
             {/* Description */}
-            <p className="text-gray-600 text-[16.5px] leading-[1.85] mb-8">
+            <p className="text-gray-600 text-[16.5px] lg:text-[18px] leading-[1.85] mb-8">
               {product.description}
             </p>
 
             {/* Specs */}
             {product.specs && (
               <div className="mb-8">
-                <h3 className="text-[13px] uppercase tracking-[0.16em] font-semibold text-gray-700 mb-3">
+                <h3 className="text-[13px] lg:text-[14px] uppercase tracking-[0.16em] font-semibold text-gray-700 mb-3">
                   Specifications
                 </h3>
                 <ul className="space-y-2">
                   {product.specs.map(s => (
-                    <li key={s} className="flex items-center gap-2.5 text-[15.5px] text-gray-600">
+                    <li key={s} className="flex items-center gap-2.5 text-[15.5px] lg:text-[17px] text-gray-600">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#5B50D6] shrink-0" />
                       {s}
                     </li>
@@ -211,15 +211,15 @@ const ProductDetailPage = () => {
 
             {/* Contact to Enquire */}
             <div className="bg-[#F5F5F3] p-6 mb-6">
-              <p className="text-[13px] uppercase tracking-[0.15em] font-semibold text-gray-500 mb-1">
+              <p className="text-[13px] lg:text-[14px] uppercase tracking-[0.15em] font-semibold text-gray-500 mb-1">
                 Contact to Enquire
               </p>
-              <p className="text-[15px] text-gray-500 leading-[1.7] mb-5">
+              <p className="text-[15px] lg:text-[17px] text-gray-500 leading-[1.7] mb-5">
                 Interested in this product? Send us an enquiry and our team will get back to you within 24 hours.
               </p>
               <Link
                 to={`/contact?pid=${product.id}`}
-                className="block w-full text-center text-white text-[13.5px] font-semibold uppercase tracking-[0.16em] py-4 rounded-[8px] hover:brightness-110 active:brightness-90 transition-all duration-200"
+                className="block w-full text-center text-white text-[13.5px] lg:text-[15px] font-semibold uppercase tracking-[0.16em] py-4 rounded-[8px] hover:brightness-110 active:brightness-90 transition-all duration-200"
                 style={{ backgroundColor: '#5B50D6' }}
               >
                 Send Enquiry →
@@ -230,7 +230,7 @@ const ProductDetailPage = () => {
             <button
               type="button"
               onClick={() => navigate('/products')}
-              className="text-[13px] uppercase tracking-[0.14em] text-gray-400 hover:text-gray-700 transition-colors text-left flex items-center gap-1.5"
+              className="text-[13px] lg:text-[14px] uppercase tracking-[0.14em] text-gray-400 hover:text-gray-700 transition-colors text-left flex items-center gap-1.5"
             >
               ← Back to collection
             </button>
@@ -265,7 +265,7 @@ const ProductDetailPage = () => {
                     />
                   </div>
                   <div className="p-4">
-                    <p className="text-[11.5px] uppercase tracking-[0.16em] text-gray-400 mb-1">{p.category}</p>
+                    <p className="text-[11.5px] lg:text-[13px] uppercase tracking-[0.16em] text-gray-400 mb-1">{p.category}</p>
                     <h4 className="text-[16px] font-semibold text-gray-900 mb-2 leading-snug" style={{ fontFamily: SERIF }}>
                       {p.name}
                     </h4>
