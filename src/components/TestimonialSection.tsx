@@ -5,7 +5,7 @@ const SERIF = "'Playfair Display', Georgia, serif";
 
 const REVIEWS = [
   {
-    text: "The attention to detail and product quality exceeded my expectations. From the furniture to the overall customer experience, everything felt premium and well-organized. I'll definitely be purchasing again.",
+    text: "The attention to detail and product quality exceeded my expectations. I'll definitely be purchasing again.",
     author: 'Johnson',
   },
   {

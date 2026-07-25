@@ -12,7 +12,7 @@ import type { Category, HomeFurnitureSubCategory } from '../data/products';
 import type { ActiveCat }   from '../components/products/ProductCategoryTabs';
 
 const SERIF    = "'Playfair Display', Georgia, serif";
-const PAGE_SIZE = 30;
+const PAGE_SIZE = 60;
 
 const COUNTS = (() => {
   const c: Record<string, number> = { All: PRODUCTS.length };
