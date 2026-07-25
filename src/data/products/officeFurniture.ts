@@ -21,14 +21,12 @@ import of18 from '../../assets/products/Office_Furniture/of-18.jpeg';
 import of19 from '../../assets/products/Office_Furniture/of-19.jpeg';
 import of20 from '../../assets/products/Office_Furniture/of-20.jpeg';
 import of21 from '../../assets/products/Office_Furniture/of-21.jpeg';
-import of22 from '../../assets/products/Office_Furniture/of-22.jpeg';
 import of23 from '../../assets/products/Office_Furniture/of-23.jpeg';
 import of24 from '../../assets/products/Office_Furniture/of-24.jpeg';
 import of25 from '../../assets/products/Office_Furniture/of-25.jpeg';
 import of26 from '../../assets/products/Office_Furniture/of-26.jpeg';
 import of27 from '../../assets/products/Office_Furniture/of-27.jpeg';
 import of28 from '../../assets/products/Office_Furniture/of-28.jpeg';
-import of29 from '../../assets/products/Office_Furniture/of-29.jpeg';
 import of30 from '../../assets/products/Office_Furniture/of-30.jpeg';
 import of31 from '../../assets/products/Office_Furniture/of-31.jpeg';
 import of32 from '../../assets/products/Office_Furniture/of-32.jpeg';
@@ -42,31 +40,8 @@ import of39 from '../../assets/products/Office_Furniture/of-39.jpeg';
 import of40 from '../../assets/products/Office_Furniture/of-40.jpeg';
 import of41 from '../../assets/products/Office_Furniture/of-41.jpeg';
 
-import of42 from '../../assets/products/Office_Furniture/of-42.jpeg';
-import of43 from '../../assets/products/Office_Furniture/of-43.jpeg';
-import of44 from '../../assets/products/Office_Furniture/of-44.jpeg';
-import of45 from '../../assets/products/Office_Furniture/of-45.jpeg';
 import of46 from '../../assets/products/Office_Furniture/of-46.jpeg';
-import of47 from '../../assets/products/Office_Furniture/of-47.jpeg';
-import of48 from '../../assets/products/Office_Furniture/of-48.jpeg';
-import of49 from '../../assets/products/Office_Furniture/of-49.jpeg';
-import of50 from '../../assets/products/Office_Furniture/of-50.jpeg';
-import of51 from '../../assets/products/Office_Furniture/of-51.jpeg';
-import of52 from '../../assets/products/Office_Furniture/of-52.jpeg';
-import of53 from '../../assets/products/Office_Furniture/of-53.jpeg';
-import of54 from '../../assets/products/Office_Furniture/of-54.jpeg';
-import of55 from '../../assets/products/Office_Furniture/of-55.jpeg';
-import of56 from '../../assets/products/Office_Furniture/of-56.jpeg';
-import of57 from '../../assets/products/Office_Furniture/of-57.jpeg';
-import of58 from '../../assets/products/Office_Furniture/of-58.jpeg';
 import of59 from '../../assets/products/Office_Furniture/of-59.jpeg';
-import of60 from '../../assets/products/Office_Furniture/of-60.jpeg';
-import of61 from '../../assets/products/Office_Furniture/of-61.jpeg';
-import of62 from '../../assets/products/Office_Furniture/of-62.jpeg';
-import of63 from '../../assets/products/Office_Furniture/of-63.jpeg';
-import of64 from '../../assets/products/Office_Furniture/of-64.jpeg';
-import of65 from '../../assets/products/Office_Furniture/of-65.jpeg';
-import of66 from '../../assets/products/Office_Furniture/of-66.jpeg';
 import of67 from '../../assets/products/Office_Furniture/of-67.jpeg';
 
 import hf57 from '../../assets/products/Home_furniture/hf-57.jpeg';
@@ -160,19 +135,7 @@ export const officeFurnitureProducts: Product[] = [
     gallery: [of21],
     specs: ['Fixed black steel legs', 'PU leather upholstery', 'Padded seat & back', 'Stackable (sold per unit)'],
   },
-  {
-    id: 'mesh-high-back-chair',
-    name: 'High-Back Mesh Chair',
-    category: 'Office Furniture',
-    description: 'A slim-profile high-back mesh office chair with a structured headrest and adjustable armrests. Ideal for open-plan offices and hot-desking environments.',
-    price: '₦350,000',
-    priceNum: 350000,
-    image: of22,
-    objectPos: 'center',
-    imageVariant: 'portrait',
-    gallery: [of22],
-    specs: ['High-back mesh design', 'Adjustable headrest', 'Adjustable armrests', 'Polished chrome base'],
-  },
+
   {
     id: 'ergonomic-workstation-chair',
     name: 'Ergonomic Workstation Chair',
@@ -247,18 +210,7 @@ export const officeFurnitureProducts: Product[] = [
     gallery: [of28],
     specs: ['L-shaped layout', 'Light grey laminate finish', 'Integrated cable management', 'Return unit with storage drawer'],
   },
-  {
-    id: 'dark-walnut-manager-desk',
-    name: 'Dark Walnut Manager Desk',
-    category: 'Office Furniture',
-    description: 'A focused single-pedestal manager desk in deep dark walnut with a clean rectangular top and a 3-drawer pedestal unit. A no-nonsense, professional-grade desk for managers, senior staff and home offices that demands quality.',
-    price: '₦650,000',
-    priceNum: 650000,
-    image: of29,
-    objectPos: 'center',
-    gallery: [of29],
-    specs: ['Rectangular single-desk layout', 'Dark walnut laminate finish', '3-drawer pedestal unit', 'Width: 160cm'],
-  },
+
   {
     id: 'walnut-s-panel-exec-desk',
     name: 'Walnut S-Panel Executive Desk',
@@ -307,6 +259,18 @@ export const officeFurnitureProducts: Product[] = [
     objectPos: 'center',
     gallery: [of33],
     specs: ['L-shaped layout', 'Dark walnut veneer', 'Fixed + mobile pedestal units', 'Lockable drawer storage'],
+  },
+  {
+    id: 'cream-ribbed-l-desk-charcoal-top',
+    name: 'Cream Ribbed L-Desk with Charcoal Top',
+    category: 'Office Furniture',
+    description: 'A distinguished L-shaped executive desk in cream with a signature vertical ribbed panel body and a contrasting charcoal top. The two-tone palette and ribbed detailing deliver a sophisticated, contemporary look for corporate offices and premium home studies.',
+    price: '₦1,400,000',
+    priceNum: 1400000,
+    image: of59,
+    objectPos: 'center',
+    gallery: [of59],
+    specs: ['L-shaped executive layout', 'Cream ribbed body with charcoal top', 'Return unit with storage', 'High-back ergonomic chair included'],
   },
   {
     id: 'cream-ribbed-exec-l-desk',
@@ -469,43 +433,7 @@ export const officeFurnitureProducts: Product[] = [
     gallery: [kit04],
     specs: ['12 individual compartments (3 × 4)', 'Light grey powder-coat finish', 'Individual key lock per compartment', 'Ventilation slots on each door'],
   },
-  {
-    id: 'red-black-chrome-reception-desk',
-    name: 'Red & Black Chrome Column Reception Desk',
-    category: 'Office Furniture',
-    description: 'A commanding full-height reception counter with a glossy red panel front, black worktop and tall chrome column accents. The dramatic colourway and architectural form make a bold first impression for corporate lobbies, clinics and premium showrooms.',
-    price: '₦1,200,000',
-    priceNum: 1200000,
-    image: of42,
-    objectPos: 'center',
-    gallery: [of42],
-    specs: ['Full-height reception counter', 'Gloss red panel front', 'Black worktop with chrome column accents', 'Under-counter storage included'],
-  },
-  {
-    id: 'dark-quilted-office-lounge-set',
-    name: 'Dark Quilted Leather Executive Lounge Set',
-    category: 'Office Furniture',
-    description: 'A sophisticated 3-piece executive lounge set in dark quilted leather — a 3-seater sofa and two armchairs with deep button-tufted upholstery and polished chrome trim. The perfect prestige seating for director suites, executive waiting areas and premium boardroom anterrooms.',
-    price: '₦2,800,000',
-    priceNum: 2800000,
-    image: of43,
-    objectPos: 'center',
-    featured: true,
-    gallery: [of43, of44],
-    specs: ['3-piece set (3-seater + 2 armchairs)', 'Dark quilted leather upholstery', 'Deep button-tufting', 'Polished chrome trim & legs'],
-  },
-  {
-    id: 'round-perforated-cafe-office-set',
-    name: 'Round Perforated Café Table & Moulded Chair Set',
-    category: 'Office Furniture',
-    description: 'A contemporary 4-seater breakout or café set with a round perforated black table top on a star-base pedestal and four grey moulded polypropylene armchairs. Lightweight, stackable and versatile — perfect for office breakout zones, canteens and training rooms.',
-    price: '₦480,000',
-    priceNum: 480000,
-    image: of45,
-    objectPos: 'center',
-    gallery: [of45],
-    specs: ['4-seater set (table + 4 chairs)', 'Round perforated black table top', 'Star-base pedestal', 'Stackable grey polypropylene armchairs'],
-  },
+
   {
     id: 'burgundy-marble-office-lounge-set',
     name: 'Burgundy Leather Office Lounge Set',
@@ -518,227 +446,7 @@ export const officeFurnitureProducts: Product[] = [
     gallery: [of46],
     specs: ['3-piece set (sofa + 2 armchairs)', 'Deep burgundy leather upholstery', 'Tufted backrest & padded arms', 'Marble oval coffee table included'],
   },
-  {
-    id: '4-door-metal-locker-cream',
-    name: '4-Door Metal Staff Locker (Cream)',
-    category: 'Office Furniture',
-    description: 'A secure 4-door metal staff locker in cream with individual key locks and ventilated panels. The clean neutral finish suits staff rooms, changing areas, gyms and co-working spaces where smart personal storage is essential.',
-    price: '₦165,000',
-    priceNum: 165000,
-    image: of47,
-    objectPos: 'center',
-    gallery: [of47],
-    specs: ['4 individual compartments (2×2)', 'Cream powder-coat finish', 'Individual key lock per door', 'Ventilated panel doors'],
-  },
-  {
-    id: 'glass-door-filing-cabinet-grey',
-    name: 'Grey Glass-Door Filing Cabinet',
-    category: 'Office Furniture',
-    description: 'A full-height grey metal filing cabinet with glass-panelled upper doors for open display shelving and solid lockable lower doors for secure file storage. A functional and professional storage solution for offices, archives and law firms.',
-    price: '₦235,000',
-    priceNum: 235000,
-    image: of48,
-    objectPos: 'center',
-    gallery: [of48, of49, of51],
-    specs: ['Full-height 2-section cabinet', 'Glass upper doors with 3 adjustable shelves', 'Solid lockable lower doors', 'Grey powder-coat finish'],
-  },
-  {
-    id: '12-door-grey-locker-bank',
-    name: '12-Door Grey Metal Locker Bank',
-    category: 'Office Furniture',
-    description: 'A heavy-duty 12-compartment grey metal locker bank with individual key locks — the go-to solution for staff rooms, gyms, schools and co-working spaces requiring multiple secure personal storage bays.',
-    price: '₦480,000',
-    priceNum: 480000,
-    image: of50,
-    objectPos: 'center',
-    gallery: [of50],
-    specs: ['12 individual compartments (3 × 4)', 'Grey powder-coat finish', 'Individual key lock per compartment', 'Ventilation slots on each door'],
-  },
-  {
-    id: 'orange-grey-student-desk-set',
-    name: 'Orange & Grey 2-Person Student Desk Set',
-    category: 'Office Furniture',
-    description: 'A robust 2-seat study desk in an orange-and-grey colour scheme with a shared writing surface, under-seat storage shelf and matching chairs. Designed for classrooms, training rooms, libraries and educational environments that need durability with a pop of energy.',
-    price: '₦120,000',
-    priceNum: 120000,
-    image: of52,
-    objectPos: 'center',
-    gallery: [of52],
-    specs: ['2-seat shared desk', 'Orange & grey colourway', 'Under-seat storage shelf', 'Matching chairs included'],
-  },
-  {
-    id: 'grey-l-shape-highrise-exec-desk',
-    name: 'Grey L-Shape Executive Desk Suite',
-    category: 'Office Furniture',
-    description: 'A sleek light grey L-shaped executive desk with integrated return unit and a matching ergonomic high-back chair. Photographed in a luxury high-rise — the compact, professional form suits modern corporate offices and upscale home studies.',
-    price: '₦1,350,000',
-    priceNum: 1350000,
-    image: of53,
-    objectPos: 'center',
-    gallery: [of53],
-    specs: ['L-shaped executive layout', 'Light grey laminate finish', 'Integrated return unit with storage', 'High-back ergonomic chair included'],
-  },
-  {
-    id: 'dark-wood-manager-desk-pedestal',
-    name: 'Dark Wood Manager Desk with 3-Drawer Pedestal',
-    category: 'Office Furniture',
-    description: 'A focused single-pedestal manager desk in deep dark wood veneer with a 3-drawer pedestal unit and a matching grey high-back chair. A professional, practical setup for managers, senior staff and executive home offices.',
-    price: '₦750,000',
-    priceNum: 750000,
-    image: of54,
-    objectPos: 'center',
-    gallery: [of54],
-    specs: ['Rectangular single-desk layout', 'Dark wood veneer finish', '3-drawer pedestal unit', 'Matching high-back chair included'],
-  },
-  {
-    id: 'brown-walnut-geometric-s-panel-desk',
-    name: 'Brown Walnut Desk with Geometric S-Panel',
-    category: 'Office Furniture',
-    description: 'A premium executive desk in rich brown walnut veneer with a distinctive geometric white S-shaped sculpted panel base. The bold sculptural form makes it a striking centrepiece for any corner office or private suite.',
-    price: '₦950,000',
-    priceNum: 950000,
-    image: of55,
-    objectPos: 'center',
-    gallery: [of55],
-    specs: ['Rectangular executive layout', 'Brown walnut veneer top', 'White geometric S-panel base', 'Width: 180cm'],
-  },
-  {
-    id: 'walnut-l-shape-greek-key-desk',
-    name: 'Walnut L-Shape Desk with Greek Key Panel',
-    category: 'Office Furniture',
-    description: 'An executive L-shaped desk in warm walnut veneer with a decorative Greek key pattern panel fascia. The classical ornamental detail brings refined character to corporate suites, law offices and prestige private studies.',
-    price: '₦1,100,000',
-    priceNum: 1100000,
-    image: of56,
-    objectPos: 'center',
-    gallery: [of56],
-    specs: ['L-shaped executive layout', 'Walnut veneer top', 'Greek key decorative panel fascia', 'Matching return unit included'],
-  },
-  {
-    id: 'dark-grey-ceo-desk-gold-trim',
-    name: 'Dark Grey CEO L-Desk with Gold Trim & Illuminated Bookcase',
-    category: 'Office Furniture',
-    description: 'A complete prestige CEO office suite in dark grey with gold trim accents — an L-shaped desk, white leather executive chair and a full-height illuminated bookcase. The dark palette and gold detail command authority in director suites and C-suite corner offices.',
-    price: '₦2,200,000',
-    priceNum: 2200000,
-    image: of57,
-    objectPos: 'center',
-    featured: true,
-    gallery: [of57],
-    specs: ['Complete CEO suite (L-desk + chair + bookcase)', 'Dark grey with gold trim accents', 'Full-height illuminated bookcase', 'White leather executive chair included'],
-  },
-  {
-    id: 'dark-brown-l-desk-gold-pedestals',
-    name: 'Dark Brown Executive L-Desk with Gold Trim & Pedestals',
-    category: 'Office Furniture',
-    description: 'A commanding L-shaped executive desk in dark brown veneer with gold trim detailing, two matching cream pedestal units and an integrated bookshelf. A premium, comprehensive setup for executive directors, senior managers and luxury home offices.',
-    price: '₦1,800,000',
-    priceNum: 1800000,
-    image: of58,
-    objectPos: 'center',
-    gallery: [of58],
-    specs: ['L-shaped executive layout', 'Dark brown veneer with gold trim', '2 cream pedestal units included', 'Integrated bookshelf wall unit'],
-  },
-  {
-    id: 'cream-ribbed-l-desk-charcoal-top',
-    name: 'Cream Ribbed L-Desk with Charcoal Top',
-    category: 'Office Furniture',
-    description: 'A distinguished L-shaped executive desk in cream with a signature vertical ribbed panel body and a contrasting charcoal top. The two-tone palette and ribbed detailing deliver a sophisticated, contemporary look for corporate offices and premium home studies.',
-    price: '₦1,400,000',
-    priceNum: 1400000,
-    image: of59,
-    objectPos: 'center',
-    gallery: [of59],
-    specs: ['L-shaped executive layout', 'Cream ribbed body with charcoal top', 'Return unit with storage', 'High-back ergonomic chair included'],
-  },
-  {
-    id: 'black-mesh-ergonomic-highback-chair',
-    name: 'Black Mesh Ergonomic High-Back Chair',
-    category: 'Office Furniture',
-    description: 'A professional-grade high-back ergonomic chair with a full black mesh back, padded seat, adjustable headrest and lumbar support. Engineered for all-day comfort in corporate offices and home workstations.',
-    price: '₦195,000',
-    priceNum: 195000,
-    image: of60,
-    objectPos: 'center',
-    imageVariant: 'portrait',
-    gallery: [of60],
-    specs: ['Full black mesh high-back', 'Adjustable headrest & lumbar support', 'Height-adjustable padded seat', 'Smooth-roll casters & 360° swivel'],
-  },
-  {
-    id: 'grey-mesh-sled-conference-chair',
-    name: 'Grey Mesh Conference Chair on Chrome Sled Base',
-    category: 'Office Furniture',
-    description: 'A lightweight grey mesh conference and visitor chair on a chrome cantilever sled base. The breathable mesh back, padded seat and no-wheel sled design make it ideal for meeting rooms, conference halls and visitor waiting areas.',
-    price: '₦68,000',
-    priceNum: 68000,
-    image: of61,
-    objectPos: 'center',
-    imageVariant: 'portrait',
-    gallery: [of61],
-    specs: ['Cantilever chrome sled base', 'Grey breathable mesh back', 'Padded grey seat', 'Stackable (sold per unit)'],
-  },
-  {
-    id: 'charcoal-split-back-ergonomic-chair',
-    name: 'Charcoal Split-Back Ergonomic Chair',
-    category: 'Office Furniture',
-    description: 'An advanced ergonomic office chair in dark charcoal with a split dual-back mesh design — two independent back panels with a separate adjustable headrest. The split back adapts to spinal movement for superior all-day lumbar and upper-back support.',
-    price: '₦235,000',
-    priceNum: 235000,
-    image: of62,
-    objectPos: 'center',
-    imageVariant: 'portrait',
-    gallery: [of62],
-    specs: ['Split dual-back mesh design', 'Independent lumbar & upper-back panels', 'Adjustable headrest', 'Smooth-roll casters & 360° swivel'],
-  },
-  {
-    id: 'cream-ribbed-walnut-top-l-desk',
-    name: 'Cream Ribbed L-Desk with Walnut Top & Tan Chair',
-    category: 'Office Furniture',
-    description: 'A refined L-shaped executive desk with a cream ribbed panel body and a warm walnut veneer top, paired with a tan leather ergonomic chair. The warm two-tone combination creates an inviting yet professional setup for executive offices and home studies.',
-    price: '₦1,500,000',
-    priceNum: 1500000,
-    image: of63,
-    objectPos: 'center',
-    gallery: [of63],
-    specs: ['L-shaped executive layout', 'Cream ribbed body with walnut top', 'Return unit with storage', 'Tan leather ergonomic chair included'],
-  },
-  {
-    id: 'cream-exec-desk-curved-pedestals',
-    name: 'Cream Executive Desk with Curved Pedestals',
-    category: 'Office Furniture',
-    description: 'A clean architectural standalone executive desk in ivory cream with a distinctive double curved pedestal base. Photographed against a London skyline — the refined minimal aesthetic suits contemporary financial offices, legal chambers and premium home studies.',
-    price: '₦1,250,000',
-    priceNum: 1250000,
-    image: of64,
-    objectPos: 'center',
-    gallery: [of64],
-    specs: ['Straight executive desk layout', 'Ivory cream lacquer finish', 'Double curved pedestal base', 'Width: approx. 180cm'],
-  },
-  {
-    id: 'black-mesh-midback-white-frame-chair',
-    name: 'Black Mesh Mid-Back Chair with White Frame',
-    category: 'Office Furniture',
-    description: 'A modern mid-back mesh chair in charcoal black with a striking white frame and a white 5-star base. The two-tone contrast suits contemporary open-plan offices, collaborative workspaces and creative studios where design and function go hand in hand.',
-    price: '₦145,000',
-    priceNum: 145000,
-    image: of65,
-    objectPos: 'center',
-    imageVariant: 'portrait',
-    gallery: [of65],
-    specs: ['Mid-back black mesh design', 'White frame & 5-star base', 'Height-adjustable seat', 'Adjustable armrests'],
-  },
-  {
-    id: 'light-oak-beige-pedestal-desk',
-    name: 'Light Oak & Beige Pedestal Desk',
-    category: 'Office Furniture',
-    description: 'A classic single-pedestal office desk in warm light oak with a beige body, a 3-drawer pedestal unit and a door cabinet. The timeless warm-tone finish suits traditional offices, home studies and professional service firms where warmth and practicality are equally important.',
-    price: '₦420,000',
-    priceNum: 420000,
-    image: of66,
-    objectPos: 'center',
-    gallery: [of66],
-    specs: ['Single-pedestal layout', 'Light oak top with beige lacquer body', '3-drawer pedestal + door cabinet', 'Width: approx. 160cm'],
-  },
+
   {
     id: 'taupe-ceo-l-desk-sculpted-panel',
     name: 'Premium Taupe CEO L-Desk with Sculpted Panel & Credenza',

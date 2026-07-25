@@ -21,15 +21,6 @@ import kit15 from '../../assets/products/Kitchen/kit-15.jpeg';
 import kit16 from '../../assets/products/Kitchen/kit-16.jpeg';
 import kit17 from '../../assets/products/Kitchen/kit-17.jpeg';
 import kit18 from '../../assets/products/Kitchen/kit-18.jpeg';
-import kit19 from '../../assets/products/Kitchen/kit-19.jpeg';
-import kit20 from '../../assets/products/Kitchen/kit-20.jpeg';
-import kit21 from '../../assets/products/Kitchen/kit-21.jpeg';
-import kit22 from '../../assets/products/Kitchen/kit-22.jpeg';
-import kit23 from '../../assets/products/Kitchen/kit-23.jpeg';
-import kit24 from '../../assets/products/Kitchen/kit-24.jpeg';
-import kit25 from '../../assets/products/Kitchen/kit-25.jpeg';
-import kit26 from '../../assets/products/Kitchen/kit-26.jpeg';
-import kit27 from '../../assets/products/Kitchen/kit-27.jpeg';
 
 export const kitchenWaresProducts: Product[] = [
   {
@@ -41,7 +32,7 @@ export const kitchenWaresProducts: Product[] = [
     priceNum: 85000,
     image: goldCutleryImg,
     objectPos: 'center',
-    gallery: [goldCutleryImg, platesImg],
+    gallery: [goldCutleryImg, ],
     specs: ['24-piece set', 'Brushed gold finish', '18/10 stainless steel', 'Gift box included'],
   },
   {
@@ -53,7 +44,7 @@ export const kitchenWaresProducts: Product[] = [
     priceNum: 42000,
     image: platesImg,
     objectPos: 'center',
-    gallery: [platesImg, goldCutleryImg],
+    gallery: [platesImg],
     specs: ['12-piece set', 'Microwave safe', 'Dishwasher safe', 'Diameter: 28cm'],
   },
   {
@@ -65,7 +56,7 @@ export const kitchenWaresProducts: Product[] = [
     priceNum: 58000,
     image: castIronImg,
     objectPos: 'center',
-    gallery: [castIronImg, cookwareImg],
+    gallery: [castIronImg, ],
     specs: ['5.5L capacity', 'Enamelled cast iron', 'Oven safe to 260°C', 'Induction compatible'],
   },
   {
@@ -77,7 +68,7 @@ export const kitchenWaresProducts: Product[] = [
     priceNum: 95000,
     image: cookwareImg,
     objectPos: 'center',
-    gallery: [cookwareImg, castIronImg],
+    gallery: [cookwareImg],
     specs: ['10-piece set', 'Tri-ply stainless steel', 'Induction compatible', 'Oven safe to 300°C'],
   },
   {
@@ -115,7 +106,7 @@ export const kitchenWaresProducts: Product[] = [
     image: kit11,
     objectPos: 'center',
     featured: true,
-    gallery: [kit11, kit07, kit12, kit20, kit23, kit24],
+    gallery: [kit11, kit07, kit12],
     specs: ['10-piece set', 'Die-cast aluminium with ARC granite coating', 'PFOA-free, eco-friendly', 'Compatible with gas, electric & induction hobs'],
   },
   {
@@ -128,7 +119,7 @@ export const kitchenWaresProducts: Product[] = [
     image: kit09,
     objectPos: 'center',
     imageVariant: 'portrait',
-    gallery: [kit09, kit10, kit21, kit22],
+    gallery: [kit09, kit10],
     specs: ['800W pure copper motor', '1.5L glass blending jar', '6-leaf blade system, 20,000 RPM', 'Detachable dry grinding cup included'],
   },
   {
@@ -141,7 +132,7 @@ export const kitchenWaresProducts: Product[] = [
     image: kit15,
     objectPos: 'center',
     imageVariant: 'portrait',
-    gallery: [kit15, kit06, kit19, kit27],
+    gallery: [kit15, kit06],
     specs: ['USB-C rechargeable', 'LED digital display', 'Juice / ice crush / baby food modes', 'Available in white and black'],
   },
   {
@@ -154,7 +145,7 @@ export const kitchenWaresProducts: Product[] = [
     image: kit13,
     imageVariant: 'portrait',
     objectPos: 'center',
-    gallery: [kit13, kit25],
+    gallery: [kit13],
     specs: ['3.5L capacity', 'Self-heating with wall & car socket adapters', 'Leak-proof with secure clip locks', 'Removable inner container'],
   },
   {
@@ -166,7 +157,7 @@ export const kitchenWaresProducts: Product[] = [
     priceNum: 75000,
     image: kit14,
     objectPos: 'center',
-    gallery: [kit14, kit26],
+    gallery: [kit14],
     specs: ['4-piece set (frying pan + saucepan + casserole + wok)', 'PFOA-free ceramic non-stick coating', 'Wood-effect soft-grip handles', 'Induction & oven compatible'],
   },
   {

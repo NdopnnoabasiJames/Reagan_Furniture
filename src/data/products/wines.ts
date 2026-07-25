@@ -6,13 +6,10 @@ import w03 from '../../assets/products/Wines/w-03.jpeg';
 import w04 from '../../assets/products/Wines/w-04.jpeg';
 import w05 from '../../assets/products/Wines/w-05.jpeg';
 import w06 from '../../assets/products/Wines/w-06.jpeg';
-import w07 from '../../assets/products/Wines/w-07.jpeg';
 import w08 from '../../assets/products/Wines/w-08.jpeg';
 import w09 from '../../assets/products/Wines/w-09.jpeg';
 import w10 from '../../assets/products/Wines/w-10.jpeg';
 import w11 from '../../assets/products/Wines/w-11.jpeg';
-import w12 from '../../assets/products/Wines/w-12.jpeg';
-import w13 from '../../assets/products/Wines/w-13.jpeg';
 import w14 from '../../assets/products/Wines/w-14.jpeg';
 import w15 from '../../assets/products/Wines/w-15.jpeg';
 import w16 from '../../assets/products/Wines/w-16.jpeg';
@@ -87,7 +84,7 @@ export const winesProducts: Product[] = [
     objectPos: 'center',
     imageVariant: 'portrait',
     featured: true,
-    gallery: [w05, w12],
+    gallery: [w05],
     specs: ['Magnum (1.5L)', 'Metodo Martinotti sparkling', 'Limited edition Auguri 2024', 'Giacobazzi Modena, Italy'],
   },
   {
@@ -100,7 +97,7 @@ export const winesProducts: Product[] = [
     image: w06,
     objectPos: 'center',
     imageVariant: 'portrait',
-    gallery: [w06, w07],
+    gallery: [w06],
     specs: ['Valdobbiadene Prosecco Superiore DOCG', 'Prestige Collection', 'Mionetto, Italy', 'Presented with luxury gift box'],
   },
   {
@@ -114,7 +111,7 @@ export const winesProducts: Product[] = [
     objectPos: 'center',
     imageVariant: 'portrait',
     featured: true,
-    gallery: [w08, w13],
+    gallery: [w08],
     specs: ['Franciacorta DOCG Brut', 'Classic method (Metodo Classico)', 'Berlucchi, Brescia, Italy', 'Luxury cream gift box included'],
   },
   {

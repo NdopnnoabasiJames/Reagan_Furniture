@@ -21,11 +21,7 @@ import brownMarbleWalnut  from '../../../assets/products/home-furniture/dining/b
 import hf82 from '../../../assets/products/home-furniture/dining/hf-82.jpeg';
 import hf83 from '../../../assets/products/home-furniture/dining/hf-83.jpeg';
 import hf92 from '../../../assets/products/home-furniture/dining/hf-92.jpeg';
-import hf94 from '../../../assets/products/home-furniture/dining/hf-94.jpeg';
-import hf96 from '../../../assets/products/home-furniture/dining/hf-96.jpeg';
-import hf97 from '../../../assets/products/home-furniture/dining/hf-97.jpeg';
 import hf98 from '../../../assets/products/home-furniture/dining/hf-98.jpeg';
-import hf99 from '../../../assets/products/home-furniture/dining/hf-99.jpeg';
 
 export const diningProducts: Product[] = [
   {
@@ -182,7 +178,7 @@ export const diningProducts: Product[] = [
     priceNum: 1450000,
     image: whiteGoldGeo,
     objectPos: 'center',
-    gallery: [whiteGoldGeo, hf94],
+    gallery: [whiteGoldGeo],
     specs: ['6-seater', 'White gloss rectangular table top', 'Geometric gold angled-bar base', 'Croc-embossed leather & chrome frame chairs'],
   },
   {
@@ -196,7 +192,7 @@ export const diningProducts: Product[] = [
     image: marbleGoldU,
     objectPos: 'center',
     featured: true,
-    gallery: [marbleGoldU, hf96],
+    gallery: [marbleGoldU],
     specs: ['6-seater', 'Marble top table', 'Gold U-arch pedestal base', 'Black barrel chairs with gold accent band'],
   },
   {
@@ -209,7 +205,7 @@ export const diningProducts: Product[] = [
     priceNum: 1850000,
     image: darkBaroqueLeather,
     objectPos: 'center',
-    gallery: [darkBaroqueLeather, hf97],
+    gallery: [darkBaroqueLeather],
     specs: ['6-seater', 'Dark lacquer table with carved cabriole legs', 'Button-tufted brown leather seat & back', 'Gold-carved crest rail & frame detail'],
   },
   {
@@ -264,17 +260,5 @@ export const diningProducts: Product[] = [
     gallery: [hf98],
     specs: ['4-seater', 'Square black pedestal table', 'Mixed sculptural lattice chairs', 'Lightweight & easy to rearrange'],
   },
-  {
-    id: 'walnut-fluted-pyramid-dining-set',
-    name: 'Walnut Fluted-Pyramid Dining Set with Mixed Leather Chairs',
-    category: 'Home Furniture',
-    subCategory: 'Dining',
-    description: 'A sophisticated 6-seater dining set with a walnut wood-grain rectangular table on a distinctive fluted pyramid base, paired with six mixed-leather chairs in cream and tan on black gold-tipped legs. A warm, contemporary centrepiece for stylish dining rooms.',
-    price: '₦1,380,000',
-    priceNum: 1380000,
-    image: hf99,
-    objectPos: 'center',
-    gallery: [hf99],
-    specs: ['6-seater', 'Walnut wood-grain rectangular table', 'Fluted pyramid decorative base', 'Mixed cream & tan leather chairs with gold-tipped legs'],
-  },
+
 ];

@@ -14,13 +14,6 @@ import out03 from '../../assets/products/Outdoors/out-03.jpeg';
 import out04 from '../../assets/products/Outdoors/out-04.jpeg';
 import out05 from '../../assets/products/Outdoors/out-05.jpeg';
 
-import out06 from '../../assets/products/Outdoors/out-06.jpeg';
-import out07 from '../../assets/products/Outdoors/out-07.jpeg';
-import out08 from '../../assets/products/Outdoors/out-08.jpeg';
-import out09 from '../../assets/products/Outdoors/out-09.jpeg';
-import out10 from '../../assets/products/Outdoors/out-10.jpeg';
-import out11 from '../../assets/products/Outdoors/out-11.jpeg';
-
 export const outdoorFurnitureProducts: Product[] = [
   {
     id: 'garden-swing-chair',
@@ -31,6 +24,7 @@ export const outdoorFurnitureProducts: Product[] = [
     priceNum: 450000,
     image: hf08,
     objectPos: 'center',
+    imageVariant: 'portrait',
     featured: true,
     gallery: [hf08],
     specs: ['2-seater with individual canopy shades', 'Deep padded beige cushions', 'Powder-coated black steel frame', 'All-weather outdoor rated'],
@@ -136,6 +130,18 @@ export const outdoorFurnitureProducts: Product[] = [
     specs: ['4-seater set (table + 4 chairs)', 'Woven rope-back armchairs', 'Round pedestal dining table', 'UV-resistant natural finish'],
   },
   {
+    id: 'tandem-garden-canopy-swing',
+    name: 'Tandem Garden Canopy Swing',
+    category: 'Outdoor Furniture',
+    description: 'A freestanding 2-person tandem garden swing bench with a full-width protective canopy and deep-padded cushions. The sturdy powder-coated steel frame is built for all-weather outdoor use — a relaxing centrepiece for gardens, verandas and pool decks.',
+    price: '₦380,000',
+    priceNum: 380000,
+    image: out05,
+    objectPos: 'center',
+    gallery: [out05],
+    specs: ['2-person tandem seating', 'Full-width protective canopy', 'Deep padded seat & back cushions', 'Powder-coated steel frame'],
+  },
+  {
     id: 'poolside-patio-dining-set',
     name: 'Patio Dining Set with Parasol',
     category: 'Outdoor Furniture',
@@ -147,78 +153,5 @@ export const outdoorFurnitureProducts: Product[] = [
     gallery: [out04],
     specs: ['5-piece set (table + 4 chairs + parasol)', 'Square tempered glass table top', 'Reclining folding mesh chairs', 'Large 270cm market umbrella'],
   },
-  {
-    id: 'tandem-garden-canopy-swing',
-    name: 'Tandem Garden Canopy Swing',
-    category: 'Outdoor Furniture',
-    description: 'A side-by-side 2-seat garden swing bench with individual canopy shades, deep tufted beige cushions and cup holders on each armrest. The robust powder-coated black steel frame handles all weather — a relaxing centrepiece for any garden or veranda.',
-    price: '₦320,000',
-    priceNum: 320000,
-    image: out05,
-    objectPos: 'center',
-    gallery: [out05],
-    specs: ['2-seat tandem swing bench', 'Individual canopy shades per seat', 'Deep tufted beige cushions', 'Cup holders on each armrest'],
-  },
-  {
-    id: 'cast-iron-lattice-patio-dining-set',
-    name: 'Black Cast Iron Lattice Patio Dining Set',
-    category: 'Outdoor Furniture',
-    description: 'A classic black cast iron lattice-pattern patio dining set with a round table and four matching chairs, dressed with vibrant red cushions. The ornate lattice design and heavy-gauge construction are built for all-weather outdoor use — a timeless choice for gardens and terraces.',
-    price: '₦680,000',
-    priceNum: 680000,
-    image: out06,
-    objectPos: 'center',
-    gallery: [out06],
-    specs: ['4-seater set (round table + 4 chairs)', 'Heavy-gauge cast iron construction', 'Ornate lattice pattern', 'Red seat & back cushions included'],
-  },
-  {
-    id: 'rattan-hanging-egg-chair-brown',
-    name: 'Brown Rattan Hanging Egg Chair with Stand',
-    category: 'Outdoor Furniture',
-    description: 'A freestanding hanging egg chair in natural brown hand-woven PE rattan with deep brown cushioning and a powder-coated steel arc stand. The tall arched stand brings effortless resort luxury to any garden, poolside or terrace.',
-    price: '₦420,000',
-    priceNum: 420000,
-    imageVariant: 'portrait',
-    image: out07,
-    objectPos: 'center',
-    featured: true,
-    gallery: [out07, out08],
-    specs: ['Freestanding with powder-coated arc stand', 'Natural brown PE rattan shell', 'Deep padded brown cushion', 'Available in brown or black'],
-  },
-  {
-    id: 'cream-woven-patio-dining-set',
-    name: 'Cream Woven Rope Patio Dining Set',
-    category: 'Outdoor Furniture',
-    description: 'A serene 4-seater outdoor dining set with a round table and four matching armchairs in natural cream woven rope over a steel frame. The neutral palette and airy woven texture complement garden, terrace and covered pergola settings perfectly.',
-    price: '₦580,000',
-    priceNum: 580000,
-    image: out09,
-    objectPos: 'center',
-    gallery: [out09],
-    specs: ['4-seater set (round table + 4 armchairs)', 'Cream woven rope upholstery', 'Powder-coated steel frame', 'All-weather UV-resistant construction'],
-  },
-  {
-    id: 'dark-grey-aluminium-patio-set',
-    name: 'Dark Grey Aluminium Patio Set with Parasol',
-    category: 'Outdoor Furniture',
-    description: 'A complete 5-piece dark grey powder-coated aluminium patio dining set with a square glass-top table, four sling-back chairs and a large burgundy market umbrella. Built for durability in all climates — the premium choice for rooftop terraces and pool decks.',
-    price: '₦750,000',
-    priceNum: 750000,
-    image: out10,
-    objectPos: 'center',
-    gallery: [out10],
-    specs: ['5-piece set (table + 4 chairs + parasol)', 'Dark grey powder-coated aluminium', 'Square tempered glass table top', 'Large burgundy 270cm market umbrella'],
-  },
-  {
-    id: 'garden-swing-2-person-canopy',
-    name: '2-Person Garden Swing with Individual Canopies',
-    category: 'Outdoor Furniture',
-    description: 'A side-by-side 2-person garden swing with individual padded canopy shades, beige all-weather cushions and a sturdy powder-coated steel frame. The independent canopies let each seat be adjusted for sun or shade — a relaxing centrepiece for any garden or veranda.',
-    price: '₦340,000',
-    priceNum: 340000,
-    image: out11,
-    objectPos: 'center',
-    gallery: [out11],
-    specs: ['2-person tandem swing', 'Individual adjustable canopy per seat', 'All-weather beige cushions', 'Powder-coated steel frame'],
-  },
+
 ];

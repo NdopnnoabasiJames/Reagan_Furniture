@@ -17,7 +17,7 @@ export const electronicsProducts: Product[] = [
     image: tvUnitImg,
     objectPos: 'center',
     featured: true,
-    gallery: [tvUnitImg, wallTvImg],
+    gallery: [tvUnitImg],
     specs: ['65" 4K UHD display', 'HDR10+ support', 'Built-in Wi-Fi & Bluetooth', 'Includes wall bracket'],
   },
   {
@@ -29,7 +29,7 @@ export const electronicsProducts: Product[] = [
     priceNum: 650000,
     image: wallTvImg,
     objectPos: 'center',
-    gallery: [wallTvImg, tvUnitImg],
+    gallery: [wallTvImg],
     specs: ['55" 4K UHD display', 'Frameless bezel', 'Smart OS built-in', 'HDMI × 3, USB × 2'],
   },
   {
@@ -56,7 +56,7 @@ export const electronicsProducts: Product[] = [
     objectPos: 'center',
     imageVariant: 'portrait',
     featured: true,
-    gallery: [doubleFridgeImg, wineCoolerImg],
+    gallery: [doubleFridgeImg ],
     specs: ['Side-by-side 600L capacity', 'Frost-free technology', 'Smart cooling zones', 'A++ energy rating'],
   },
   {
@@ -69,7 +69,7 @@ export const electronicsProducts: Product[] = [
     image: wineCoolerImg,
     objectPos: 'center',
     imageVariant: 'portrait',
-    gallery: [wineCoolerImg, doubleFridgeImg],
+    gallery: [wineCoolerImg],
     specs: ['Dual temperature zones', 'Glass door display', 'UV-protected glass', 'Holds up to 120 bottles'],
   },
 ];
