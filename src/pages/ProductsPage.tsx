@@ -88,13 +88,12 @@ const ProductsPage = () => {
     if (activeTab === 'Home Furniture' && selectedSubs.length > 0) {
       list = list.filter(p => p.subCategory && selectedSubs.includes(p.subCategory));
     }
-    if (searchInput) {
-      const q = searchInput.toLowerCase();
-      list = list.filter(p =>
-        p.name.toLowerCase().includes(q) ||
-        p.category.toLowerCase().includes(q) ||
-        p.description.toLowerCase().includes(q)
-      );
+    if (searchInput.trim()) {
+      const words = searchInput.trim().toLowerCase().split(/\s+/);
+      list = list.filter(p => {
+        const haystack = [p.name, p.description, ...(p.specs ?? [])].join(' ').toLowerCase();
+        return words.every(w => haystack.includes(w));
+      });
     }
     return list;
   }, [activeTab, selectedSubs, searchInput]);
