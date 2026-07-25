@@ -12,6 +12,11 @@ import velvetArched1 from '../../../assets/products/home-furniture/beds/velvet-a
 import velvetArched2 from '../../../assets/products/home-furniture/beds/velvet-arched-headboard-bed-2.jpeg';
 import velvetArched3 from '../../../assets/products/home-furniture/beds/velvet-arched-headboard-bed-3.jpeg';
 
+import pinkPillow    from '../../../assets/products/home-furniture/beds/pink-quilted-pillow-pair.jpeg';
+import whitePillow1  from '../../../assets/products/home-furniture/beds/white-hotel-pillow-pair-1.jpeg';
+import whitePillow2  from '../../../assets/products/home-furniture/beds/white-hotel-pillow-pair-2.jpeg';
+import whitePillow3  from '../../../assets/products/home-furniture/beds/white-hotel-pillow-pair-3.jpeg';
+
 export const bedsProducts: Product[] = [
   {
     id: 'luxury-tufted-bed',
@@ -65,5 +70,31 @@ export const bedsProducts: Product[] = [
     objectPos: 'center',
     gallery: [velvetArched1, velvetArched2, velvetArched3],
     specs: ['King size (183 × 203cm)', 'Taupe velvet upholstery', 'Arched button-tufted headboard', 'Solid dark wood feet'],
+  },
+  {
+    id: 'pink-quilted-pillow-pair',
+    name: 'Pink Quilted Pillow Pair',
+    category: 'Home Furniture',
+    subCategory: 'Beds',
+    description: 'A pair of premium pink/mauve quilted pillows with a soft diamond-stitch pattern and a plush fill for a hotel-quality sleep experience. The warm dusty-rose colourway adds an elegant accent to any bedroom, from contemporary minimalist to luxury boudoir.',
+    price: '₦32,000',
+    priceNum: 32000,
+    image: pinkPillow,
+    objectPos: 'center',
+    gallery: [pinkPillow],
+    specs: ['Pair of 2 pillows', 'Diamond-quilted fabric cover', 'Plush fill — medium support', 'Standard size (50 × 70cm)'],
+  },
+  {
+    id: 'white-hotel-pillow-pair',
+    name: 'White Hotel Pillow Pair',
+    category: 'Home Furniture',
+    subCategory: 'Beds',
+    description: 'A pair of hotel-grade white pillows with a soft, breathable cotton cover and a generous down-alternative fill. Sold in hygienic sealed packaging — the same quality you find in 5-star hotels, now for your bedroom.',
+    price: '₦28,000',
+    priceNum: 28000,
+    image: whitePillow2,
+    objectPos: 'center',
+    gallery: [whitePillow2, whitePillow1, whitePillow3],
+    specs: ['Pair of 2 pillows', 'Breathable cotton cover', 'Down-alternative plush fill', 'Sealed hygienic packaging'],
   },
 ];
