@@ -130,18 +130,6 @@ export const outdoorFurnitureProducts: Product[] = [
     specs: ['4-seater set (table + 4 chairs)', 'Woven rope-back armchairs', 'Round pedestal dining table', 'UV-resistant natural finish'],
   },
   {
-    id: 'tandem-garden-canopy-swing',
-    name: 'Tandem Garden Canopy Swing',
-    category: 'Outdoor Furniture',
-    description: 'A freestanding 2-person tandem garden swing bench with a full-width protective canopy and deep-padded cushions. The sturdy powder-coated steel frame is built for all-weather outdoor use — a relaxing centrepiece for gardens, verandas and pool decks.',
-    price: '₦380,000',
-    priceNum: 380000,
-    image: out05,
-    objectPos: 'center',
-    gallery: [out05],
-    specs: ['2-person tandem seating', 'Full-width protective canopy', 'Deep padded seat & back cushions', 'Powder-coated steel frame'],
-  },
-  {
     id: 'poolside-patio-dining-set',
     name: 'Patio Dining Set with Parasol',
     category: 'Outdoor Furniture',
