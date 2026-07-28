@@ -46,6 +46,7 @@ import of67 from '../../assets/products/Office_Furniture/of-67.jpeg';
 import of68 from '../../assets/products/Office_Furniture/of-68.jpeg';
 import of69 from '../../assets/products/Office_Furniture/of-69.jpeg';
 import of70 from '../../assets/products/Office_Furniture/of-70.jpeg';
+import of71 from '../../assets/products/Office_Furniture/of-71.jpeg';
 
 import hf57 from '../../assets/products/Home_furniture/hf-57.jpeg';
 import hf58 from '../../assets/products/Home_furniture/hf-58.jpeg';
@@ -632,5 +633,17 @@ export const officeFurnitureProducts: Product[] = [
     objectPos: 'center',
     gallery: [of70],
     specs: ['Complete suite (L-desk + full-height bookcase)', 'Dark walnut veneer finish', 'Chevron-detailed desk body', 'Real office installation — city-view setting'],
+  },
+  {
+    id: 'walnut-herringbone-l-desk-lockable-credenza',
+    name: 'Walnut Herringbone L-Desk & Lockable Credenza',
+    category: 'Office Furniture',
+    description: 'A refined L-shaped executive desk with a striking herringbone-grain walnut top on a sculptural gunmetal panel base, paired with a matching side credenza unit with lockable drawer storage. The clean product-grade finish and built-in cable management grommet make it an equally strong choice for executive corner offices and premium home studies.',
+    price: '₦1,800,000',
+    priceNum: 1800000,
+    image: of71,
+    objectPos: 'center',
+    gallery: [of71],
+    specs: ['L-shaped desk with side credenza', 'Herringbone-grain walnut top', 'Gunmetal grey panel base & credenza body', 'Lockable credenza drawers + cable management grommet'],
   },
 ];
