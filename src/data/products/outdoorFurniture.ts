@@ -12,7 +12,7 @@ import out01 from '../../assets/products/Outdoors/out-01.jpeg';
 import out02 from '../../assets/products/Outdoors/out-02.jpeg';
 import out03 from '../../assets/products/Outdoors/out-03.jpeg';
 import out04 from '../../assets/products/Outdoors/out-04.jpeg';
-import out05 from '../../assets/products/Outdoors/out-05.jpeg';
+
 
 export const outdoorFurnitureProducts: Product[] = [
   {
