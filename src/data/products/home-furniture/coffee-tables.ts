@@ -12,8 +12,6 @@ import arcTaupe         from '../../../assets/products/home-furniture/coffee-tab
 import arcGrey          from '../../../assets/products/home-furniture/coffee-tables/sculptural-arc-coffee-table-grey.jpeg';
 import greyRibbed1      from '../../../assets/products/home-furniture/coffee-tables/grey-ribbed-marble-swivel-coffee-table-1.jpeg';
 import greyRibbed2      from '../../../assets/products/home-furniture/coffee-tables/grey-ribbed-marble-swivel-coffee-table-2.jpeg';
-import darkMarble       from '../../../assets/products/home-furniture/coffee-tables/dark-marble-coffee-table.jpeg';
-
 import hf91  from '../../../assets/products/home-furniture/coffee-tables/hf-91.jpeg';
 import hf93  from '../../../assets/products/home-furniture/coffee-tables/hf-93.jpeg';
 import marbleArcTab from '../../../assets/products/home-furniture/side-tables/round-marble-chrome-arc-side-table.jpeg';

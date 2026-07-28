@@ -43,6 +43,9 @@ import of41 from '../../assets/products/Office_Furniture/of-41.jpeg';
 import of46 from '../../assets/products/Office_Furniture/of-46.jpeg';
 import of59 from '../../assets/products/Office_Furniture/of-59.jpeg';
 import of67 from '../../assets/products/Office_Furniture/of-67.jpeg';
+import of68 from '../../assets/products/Office_Furniture/of-68.jpeg';
+import of69 from '../../assets/products/Office_Furniture/of-69.jpeg';
+import of70 from '../../assets/products/Office_Furniture/of-70.jpeg';
 
 import hf57 from '../../assets/products/Home_furniture/hf-57.jpeg';
 import hf58 from '../../assets/products/Home_furniture/hf-58.jpeg';
@@ -590,5 +593,44 @@ export const officeFurnitureProducts: Product[] = [
     objectPos: 'center',
     gallery: [of18],
     specs: ['Rectangular executive layout', 'Dark walnut veneer top', 'Geometric cream chevron panel fascia', 'Matching low credenza unit'],
+  },
+
+  {
+    id: 'taupe-ribbed-angled-ceo-desk-suite',
+    name: 'Taupe Ribbed Angled-Panel CEO Desk Suite',
+    category: 'Office Furniture',
+    description: 'An ultra-premium CEO desk suite in warm taupe with a signature vertical ribbed-panel fascia and a bold diagonal angled support panel. The large L-shaped desk and matching side credenza are photographed in a luxury penthouse office — a powerful statement of executive authority and refined design.',
+    price: '₦2,200,000',
+    priceNum: 2200000,
+    image: of68,
+    objectPos: 'center',
+    featured: true,
+    gallery: [of68],
+    specs: ['L-shaped CEO desk with matching credenza', 'Warm taupe finish', 'Vertical ribbed-panel fascia', 'Diagonal angled structural support panel'],
+  },
+  {
+    id: 'charcoal-cognac-exec-recliner-chair',
+    name: 'Charcoal & Cognac Two-Tone Executive Recliner Chair',
+    category: 'Office Furniture',
+    description: 'A plush high-back executive recliner in a sophisticated two-tone of charcoal dark leather inside and warm cognac leather on the outer shell. Chrome armrest end-caps, a smooth recline lever and a polished chrome star base complete a chair built for executives who demand both presence and long-session comfort.',
+    price: '₦850,000',
+    priceNum: 850000,
+    image: of69,
+    objectPos: 'center',
+    imageVariant: 'portrait',
+    gallery: [of69],
+    specs: ['High-back recliner form', 'Charcoal leather seat & inner back', 'Cognac leather outer shell', 'Polished chrome base & armrest caps'],
+  },
+  {
+    id: 'walnut-chevron-exec-desk-bookcase-suite',
+    name: 'Walnut Chevron Executive Desk & Bookcase Suite',
+    category: 'Office Furniture',
+    description: 'A complete real-office executive suite in dark walnut with a chevron-detailed L-shaped desk and a full-height integrated bookcase wall unit — photographed in situ in a high-rise city-view office. The combined desk and bookcase create a commanding, workspace-defining setup for senior executives, managing directors and C-suite offices.',
+    price: '₦2,500,000',
+    priceNum: 2500000,
+    image: of70,
+    objectPos: 'center',
+    gallery: [of70],
+    specs: ['Complete suite (L-desk + full-height bookcase)', 'Dark walnut veneer finish', 'Chevron-detailed desk body', 'Real office installation — city-view setting'],
   },
 ];
