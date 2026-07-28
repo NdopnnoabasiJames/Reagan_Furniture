@@ -16,6 +16,7 @@ import darkMarble       from '../../../assets/products/home-furniture/coffee-tab
 
 import hf91  from '../../../assets/products/home-furniture/coffee-tables/hf-91.jpeg';
 import hf93  from '../../../assets/products/home-furniture/coffee-tables/hf-93.jpeg';
+import marbleArcTab from '../../../assets/products/home-furniture/side-tables/round-marble-chrome-arc-side-table.jpeg';
 
 export const coffeeTablesProducts: Product[] = [
   {
@@ -125,19 +126,6 @@ export const coffeeTablesProducts: Product[] = [
     gallery: [greyRibbed1, greyRibbed2],
     specs: ['Rectangular form', 'Dark marble swivel top', 'Deep grey ribbed body', 'Hidden storage compartment'],
   },
-  {
-    id: 'dark-marble-coffee-table',
-    name: 'Dark Marble Top Coffee Table with Drawers',
-    category: 'Home Furniture',
-    subCategory: 'Tables',
-    description: 'A substantial coffee table with a bold dark veined marble top on a black trim frame, with two white lacquered pull-out drawers below for generous storage. A practical yet dramatic centrepiece for modern and contemporary living rooms.',
-    price: '₦280,000',
-    priceNum: 280000,
-    image: darkMarble,
-    objectPos: 'center',
-    gallery: [darkMarble],
-    specs: ['Dark veined marble top', 'Black frame & trim', 'Two pull-out storage drawers', 'Two-tier shelf design'],
-  },
 
   {
     id: 'white-marble-oval-gunmetal-nesting-set',
@@ -149,7 +137,7 @@ export const coffeeTablesProducts: Product[] = [
     priceNum: 680000,
     image: hf91,
     objectPos: 'center',
-    gallery: [hf91],
+    gallery: [hf91, marbleArcTab],
     specs: ['3-piece set (1 oval coffee + 2 round side tables)', 'White veined marble tops', 'Slim gunmetal vertical-bar base', 'Nesting configuration'],
   },
   {

@@ -6,10 +6,6 @@ import darkBaroque    from '../../../assets/products/home-furniture/dining/dark-
 import whiteMarble    from '../../../assets/products/home-furniture/dining/white-marble-barrel-chair-dining-set.jpeg';
 import marble1        from '../../../assets/products/home-furniture/dining/marble-top-dining-set-1.jpeg';
 import roseGold       from '../../../assets/products/home-furniture/dining/rose-gold-marble-dining-set.jpeg';
-import darkSlatted1   from '../../../assets/products/home-furniture/dining/dark-slatted-dining-set-1.jpeg';
-import darkSlatted2   from '../../../assets/products/home-furniture/dining/dark-slatted-dining-set-2.jpeg';
-import roundSlatted1  from '../../../assets/products/home-furniture/dining/round-marble-slatted-dining-set-1.jpeg';
-import roundSlatted2  from '../../../assets/products/home-furniture/dining/round-marble-slatted-dining-set-2.jpeg';
 import marbleBarrel   from '../../../assets/products/home-furniture/dining/marble-grey-barrel-dining-set.jpeg';
 import barStools      from '../../../assets/products/home-furniture/dining/modern-shell-bar-stools.jpeg';
 import roundBlackSet  from '../../../assets/products/home-furniture/dining/round-black-modern-dining-set.jpeg';
@@ -102,32 +98,6 @@ export const diningProducts: Product[] = [
     objectPos: 'center',
     gallery: [roseGold],
     specs: ['6-seater', 'Marble table top', 'Rose-gold drum pedestal', 'White high-back chairs with rose-gold frame accents'],
-  },
-  {
-    id: 'dark-slatted-multicolour-dining-set',
-    name: 'Dark Slatted Multicolour Dining Set',
-    category: 'Home Furniture',
-    subCategory: 'Dining',
-    description: 'A contemporary 4-seater café-style set with a dark charcoal square table on a stainless steel pedestal base and sculptural slatted-back chairs in a vibrant mix of mint green and deep plum. A bold character piece for kitchen diners and compact dining spaces.',
-    price: '₦820,000',
-    priceNum: 820000,
-    image: darkSlatted1,
-    objectPos: 'center',
-    gallery: [darkSlatted1, darkSlatted2],
-    specs: ['4-seater', 'Dark charcoal square table top', 'Brushed steel pedestal base', 'Slatted-back chairs in mint & deep plum mix'],
-  },
-  {
-    id: 'round-marble-slatted-dining-set',
-    name: 'Round Marble Slatted Multicolour Dining Set',
-    category: 'Home Furniture',
-    subCategory: 'Dining',
-    description: 'A contemporary 4-seater dining set with a round marble-top table on a sculptural coloured pedestal and matching slatted-back chairs in a curated palette of black, white, dark brown and mint green. The Scandinavian-influenced design brings energy and personality to any dining space.',
-    price: '₦950,000',
-    priceNum: 950000,
-    image: roundSlatted1,
-    objectPos: 'center',
-    gallery: [roundSlatted1, roundSlatted2],
-    specs: ['4-seater', 'Round marble table top', 'Sculptural coloured pedestal base', 'Slatted-back chairs in multicolour mix'],
   },
   {
     id: 'marble-grey-barrel-dining-set',

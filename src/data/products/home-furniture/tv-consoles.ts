@@ -31,7 +31,7 @@ export const tvConsolesProducts: Product[] = [
     priceNum: 680000,
     image: whiteGold,
     objectPos: 'center',
-    gallery: [whiteGold, whiteGold2],
+    gallery: [whiteGold, whiteGold2, whiteSilver],
     specs: ['2-piece set (coffee table + TV stand)', 'White gloss body with gold accents', 'Tempered glass coffee table top', 'TV unit fits up to 60" TV'],
   },
   {
@@ -47,18 +47,4 @@ export const tvConsolesProducts: Product[] = [
     gallery: [whiteArc],
     specs: ['2-piece set (coffee table + TV stand)', 'White gloss with arc-pattern doors', 'Open shelving + drawer storage', 'TV stand fits up to 60" TV'],
   },
-  {
-    id: 'white-silver-living-set',
-    name: 'White & Silver Coffee Table + TV Unit',
-    category: 'Home Furniture',
-    subCategory: 'TV Consoles',
-    description: 'A coordinated white and brushed silver 2-piece living room collection. The lift-top coffee table offers hidden storage, while the TV unit features glass-panelled doors and an open central shelf. A refined, functional pairing for contemporary interiors.',
-    price: '₦590,000',
-    priceNum: 590000,
-    image: whiteSilver,
-    objectPos: 'center',
-    gallery: [whiteSilver],
-    specs: ['2-piece set (lift-top coffee table + TV unit)', 'White gloss with silver handles', 'Lift-top coffee table with hidden storage', 'Glass-door display storage'],
-  },
-
 ];
