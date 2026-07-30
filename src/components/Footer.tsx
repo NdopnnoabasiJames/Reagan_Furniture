@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin } from 'lucide-react';
 import reaganLogo from '../assets/Reagan_Logo_transparent.png';
+import { WHATSAPP_CHAT_URL } from '../data/contact';
 
 const SERIF = "'Playfair Display', Georgia, serif";
 
@@ -89,7 +90,7 @@ const Footer = () => (
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/message/O3GJFBY44YQ2O1"
+              href={WHATSAPP_CHAT_URL}
               aria-label="WhatsApp"
               className="w-8 h-8 rounded-full flex items-center justify-center text-white hover:opacity-85 transition-opacity shrink-0"
               style={{ backgroundColor: '#25D366' }}

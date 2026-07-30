@@ -6,6 +6,10 @@ import ceilingFanImg   from '../../assets/products/ceiling-fan.jpg';
 import doubleFridgeImg from '../../assets/products/double-fridge.jpg';
 import wineCoolerImg   from '../../assets/products/wine-cooler.jpg';
 
+import elec01 from '../../assets/products/Electronics/elec-01.jpeg';
+import elec02 from '../../assets/products/Electronics/elec-02.jpeg';
+import elec03 from '../../assets/products/Electronics/elec-03.jpeg';
+
 export const electronicsProducts: Product[] = [
   {
     id: 'smart-television',
@@ -71,5 +75,44 @@ export const electronicsProducts: Product[] = [
     imageVariant: 'portrait',
     gallery: [wineCoolerImg],
     specs: ['Dual temperature zones', 'Glass door display', 'UV-protected glass', 'Holds up to 120 bottles'],
+  },
+  {
+    id: 'camryuck-16-pedestal-stand-fan',
+    name: 'Camryuck 16" Pedestal Stand Fan',
+    category: 'Electronics',
+    description: 'A powerful 16-inch Camryuck pedestal stand fan with 5 blades and a protective safety guard. Features 3-speed control buttons on the stem, 360° oscillation and an adjustable height pole — a reliable everyday cooling solution for bedrooms, living rooms and offices.',
+    price: '₦22,000',
+    priceNum: 22000,
+    image: elec01,
+    objectPos: 'center',
+    imageVariant: 'portrait',
+    gallery: [elec01],
+    specs: ['16" 5-blade design', '3 speed settings', '360° oscillation', 'Adjustable height pole'],
+  },
+  {
+    id: 'ox-black-pedestal-fan',
+    name: 'OX 16" Black Pedestal Fan',
+    category: 'Electronics',
+    description: 'A sleek all-black 16-inch OX pedestal fan with a distinctive wood-tone centre hub and slim minimalist build. Quiet motor with 3-speed settings and oscillation — a stylish and effective choice for modern bedrooms, home offices and living spaces.',
+    price: '₦28,000',
+    priceNum: 28000,
+    image: elec02,
+    objectPos: 'center',
+    imageVariant: 'portrait',
+    gallery: [elec02],
+    specs: ['16" 5-blade design', 'Matte black finish with wood-tone hub', '3 speed settings', 'Oscillation & height adjustable'],
+  },
+  {
+    id: 'ox-industrial-heavy-duty-stand-fan',
+    name: 'OX 18" Heavy-Duty Industrial Stand Fan',
+    category: 'Electronics',
+    description: 'A robust 18-inch OX industrial stand fan with a heavy-gauge silver body, large-diameter cross-base and 5 high-airflow blades. Designed for warehouses, workshops, large offices and outdoor spaces where high-volume cooling is required.',
+    price: '₦45,000',
+    priceNum: 45000,
+    image: elec03,
+    objectPos: 'center',
+    imageVariant: 'portrait',
+    gallery: [elec03],
+    specs: ['18" heavy-duty 5-blade fan', 'Powder-coated steel body', 'Wide cross-base for stability', '3 speed settings with oscillation'],
   },
 ];

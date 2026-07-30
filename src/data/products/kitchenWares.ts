@@ -22,6 +22,16 @@ import kit16 from '../../assets/products/Kitchen/kit-16.jpeg';
 import kit17 from '../../assets/products/Kitchen/kit-17.jpeg';
 import kit18 from '../../assets/products/Kitchen/kit-18.jpeg';
 
+import kit19 from '../../assets/products/Kitchen/kit-19.jpeg';
+import kit20 from '../../assets/products/Kitchen/kit-20.jpeg';
+import kit21 from '../../assets/products/Kitchen/kit-21.jpeg';
+import kit22 from '../../assets/products/Kitchen/kit-22.jpeg';
+import kit23 from '../../assets/products/Kitchen/kit-23.jpeg';
+import kit24 from '../../assets/products/Kitchen/kit-24.jpeg';
+import kit25 from '../../assets/products/Kitchen/kit-25.jpeg';
+import kit26 from '../../assets/products/Kitchen/kit-26.jpeg';
+import kit27 from '../../assets/products/Kitchen/kit-27.jpeg';
+
 export const kitchenWaresProducts: Product[] = [
   {
     id: 'gold-cutlery-set',
@@ -196,5 +206,106 @@ export const kitchenWaresProducts: Product[] = [
     objectPos: 'center',
     gallery: [kit18],
     specs: ['5-piece set (2 saucepans + casserole + frying pan + milk pan)', 'Pink granite-speckle non-stick coating', 'Die-cast aluminium', 'Compatible with all hob types including induction'],
+  },
+  {
+    id: 'irel-air-fryer-5l',
+    name: 'Irel 5L Air Fryer (IAF-001)',
+    category: 'Kitchen Wares',
+    description: 'A 1500W 5-litre air fryer by Irel with a 3D cyclone air-frying cavity and a transparent viewing window on the pull-out basket. Steam-air frying mode delivers crispy, oil-free results in minutes — ideal for chips, chicken, pastries and more.',
+    price: '₦42,000',
+    priceNum: 42000,
+    image: kit19,
+    objectPos: 'center',
+    imageVariant: 'portrait',
+    gallery: [kit19],
+    specs: ['5L capacity', '1500W fast cooking', '3D cyclone air-frying cavity', 'Steam air frying + transparent viewing window'],
+  },
+  {
+    id: 'nissme-stainless-sandwich-maker',
+    name: 'Nissme Stainless Steel Sandwich Maker (SM04)',
+    category: 'Kitchen Wares',
+    description: 'A 1400W stainless steel sandwich maker by Nissme with non-stick triangular grill plates that seal and crimp sandwiches perfectly. The compact clamshell design heats up in seconds — great for toasted sandwiches, paninis and snacks.',
+    price: '₦18,000',
+    priceNum: 18000,
+    image: kit20,
+    objectPos: 'center',
+    imageVariant: 'portrait',
+    gallery: [kit20],
+    specs: ['1400W heating element', 'Non-stick triangular sandwich plates', 'Stainless steel body', 'Compact clamshell design'],
+  },
+  {
+    id: 'arzum-misto-food-chopper',
+    name: 'Arzum Misto 400W Food Chopper',
+    category: 'Kitchen Wares',
+    description: 'A 400W electric food chopper by Arzum in a soft lavender finish, with a 1-litre transparent bowl and twin stainless steel blades for quick, even chopping. Ideal for onions, herbs, nuts and garlic — comes with a storage lid to keep chopped food fresh.',
+    price: '₦20,000',
+    priceNum: 20000,
+    image: kit21,
+    objectPos: 'center',
+    imageVariant: 'portrait',
+    gallery: [kit21],
+    specs: ['400W motor', '1L transparent chopping bowl', 'Twin stainless steel blades', 'Storage lid included'],
+  },
+  {
+    id: 'crystal-diamond-cut-decanter-tumbler-set',
+    name: 'Crystal Diamond-Cut Whisky Decanter & Tumbler Set',
+    category: 'Kitchen Wares',
+    description: 'A luxury crystal whisky set comprising a diamond-cut decanter and four matching tumblers, each accented with gold-tone stud highlights at the cut intersections. Presented in a satin-lined navy velvet gift box — the perfect gift for whisky lovers, corporate guests and home bar collections.',
+    price: '₦95,000',
+    priceNum: 95000,
+    image: kit22,
+    objectPos: 'center',
+    gallery: [kit22],
+    specs: ['5-piece set (1 decanter + 4 tumblers)', 'Diamond-cut crystal with gold-tone accents', 'Satin-lined navy velvet gift box', 'Suitable for whisky, bourbon & spirits'],
+  },
+  {
+    id: 'stainless-electric-kettle',
+    name: 'Stainless Steel Electric Kettle',
+    category: 'Kitchen Wares',
+    description: 'A compact polished stainless steel electric kettle with a wide-mouth spout and ergonomic black handle on a 360° cordless base. Fast-boil element and auto-shutoff keep things safe and efficient — a clean, reliable addition to any kitchen.',
+    price: '₦14,500',
+    priceNum: 14500,
+    image: kit23,
+    objectPos: 'center',
+    gallery: [kit23],
+    specs: ['Polished stainless steel body', '360° cordless base', 'Auto shut-off & boil-dry protection', 'Ergonomic soft-grip handle'],
+  },
+  {
+    id: 'royal-fine-porcelain-dinner-service',
+    name: 'Royal Fine Porcelain Dinner Service',
+    category: 'Kitchen Wares',
+    description: 'A grand formal dinner service in heirloom-quality fine porcelain — bright white with ornate gold and sepia-panel borders and a hand-painted floral rose medallion centrepiece. The set includes a large lidded soup tureen, dinner plates, side plates, bowls and a serving platter, making it the complete statement for formal dining, manor houses and special occasions.',
+    price: '₦185,000',
+    priceNum: 185000,
+    featured: true,
+    image: kit24,
+    objectPos: 'center',
+    gallery: [kit24, kit25],
+    specs: ['Full dinner service set', 'Fine porcelain with ornate gold & sepia border', 'Floral rose medallion centre', 'Includes tureen, dinner plates, side plates, bowls & platter'],
+  },
+  {
+    id: 'royal-fine-porcelain-tea-service',
+    name: 'Royal Fine Porcelain Tea Service',
+    category: 'Kitchen Wares',
+    description: 'A classically elegant fine porcelain tea service in a rose-pink and antique gold banding with ornate cartouche motifs. Includes a large teapot, four cups with saucers, a lidded sugar bowl and a creamer — a treasured set for afternoon tea, formal entertaining and gift-giving.',
+    price: '₦145,000',
+    priceNum: 145000,
+    image: kit26,
+    objectPos: 'center',
+    gallery: [kit26],
+    specs: ['9-piece set (teapot + 4 cups & saucers + sugar bowl + creamer)', 'Fine porcelain with rose & gold cartouche border', 'Dishwasher safe', 'Gift-ready presentation'],
+  },
+  {
+    id: 'swan-3in1-electric-can-opener',
+    name: 'Swan 3-in-1 Electric Can Opener',
+    category: 'Kitchen Wares',
+    description: 'A compact electric 3-in-1 kitchen tool by Swan (UK) combining an automatic can opener, a knife sharpener and a bottle opener in a single stainless steel and black upright unit. Designed for life — with a 2-year guarantee and a smooth, hands-free operation that takes the effort out of everyday kitchen prep.',
+    price: '₦13,500',
+    priceNum: 13500,
+    image: kit27,
+    objectPos: 'center',
+    imageVariant: 'portrait',
+    gallery: [kit27],
+    specs: ['3-in-1: can opener + knife sharpener + bottle opener', 'Electric automatic can opener', 'Stainless steel & black finish', '2-year Swan guarantee'],
   },
 ];

@@ -4,6 +4,7 @@ import { ChevronDown } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { PRODUCTS, CATEGORIES, getProduct } from '../data/products';
+import { WHATSAPP_NUMBER, BUSINESS_EMAIL } from '../data/contact';
 
 const SERIF = "'Playfair Display', Georgia, serif";
 
@@ -23,6 +24,7 @@ const ContactPage = () => {
     firstName: '', lastName: '', email: '', phone: '',
     productId: '', productName: '', category: '', message: '',
   });
+  const [errors, setErrors] = useState<Record<string, string>>({});
 
   // Pre-fill product + category when arriving from ?pid=<product-id>
   useEffect(() => {
@@ -48,6 +50,55 @@ const ContactPage = () => {
     const p = getProduct(id);
     if (!p) return;
     setForm(prev => ({ ...prev, productId: p.id, productName: p.name, category: p.category }));
+  };
+
+  const validate = () => {
+    const errs: Record<string, string> = {};
+    if (!form.firstName.trim()) errs.firstName = 'First name is required';
+    if (!form.email.trim()) errs.email = 'Email address is required';
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) errs.email = 'Please enter a valid email';
+    setErrors(errs);
+    return Object.keys(errs).length === 0;
+  };
+
+  const buildMailtoUrl = () => {
+    const name = [form.firstName, form.lastName].filter(Boolean).join(' ');
+    const subject = form.productName ? `Product Enquiry – ${form.productName}` : 'Product Enquiry';
+    const body = [
+      `Name: ${name}`,
+      `Email: ${form.email}`,
+      form.phone    ? `Phone: ${form.phone}`       : '',
+      form.productName ? `Product: ${form.productName}` : '',
+      form.category ? `Category: ${form.category}` : '',
+      form.message  ? `\nMessage:\n${form.message}` : '',
+    ].filter(Boolean).join('\n');
+    return `mailto:${BUSINESS_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  };
+
+  const buildWhatsAppUrl = () => {
+    const name = [form.firstName, form.lastName].filter(Boolean).join(' ');
+    const lines = [
+      'Hi Reagan Furniture 👋',
+      '',
+      form.productName ? `I'm interested in: *${form.productName}*` : 'I have a general enquiry.',
+      form.category    ? `Category: ${form.category}` : '',
+      '',
+      `Name: ${name}`,
+      form.email ? `Email: ${form.email}` : '',
+      form.phone ? `Phone: ${form.phone}` : '',
+      form.message ? `\n${form.message}` : '',
+    ].filter((l, i, arr) => l !== '' || arr[i - 1] !== ''); // collapse consecutive blank lines
+    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join('\n').trim())}`;
+  };
+
+  const handleEmail = () => {
+    if (!validate()) return;
+    window.location.href = buildMailtoUrl();
+  };
+
+  const handleWhatsApp = () => {
+    if (!validate()) return;
+    window.open(buildWhatsAppUrl(), '_blank', 'noopener,noreferrer');
   };
 
   const fieldCls =
@@ -99,11 +150,14 @@ const ContactPage = () => {
                     First Name
                   </label>
                   <input
-                    className={fieldCls}
+                    className={`${fieldCls} ${errors.firstName ? 'border-red-400' : ''}`}
                     placeholder="Raph"
                     value={form.firstName}
-                    onChange={setField('firstName')}
+                    onChange={e => { setField('firstName')(e); setErrors(prev => ({ ...prev, firstName: '' })); }}
                   />
+                  {errors.firstName && (
+                    <p className="mt-1.5 text-[12px] text-red-500">{errors.firstName}</p>
+                  )}
                 </div>
                 <div>
                   <label className="block text-[12.5px] font-semibold uppercase tracking-[0.13em] text-gray-500 mb-2">
@@ -125,11 +179,14 @@ const ContactPage = () => {
                 </label>
                 <input
                   type="email"
-                  className={fieldCls}
+                  className={`${fieldCls} ${errors.email ? 'border-red-400' : ''}`}
                   placeholder="email@example.com"
                   value={form.email}
-                  onChange={setField('email')}
+                  onChange={e => { setField('email')(e); setErrors(prev => ({ ...prev, email: '' })); }}
                 />
+                {errors.email && (
+                  <p className="mt-1.5 text-[12px] text-red-500">{errors.email}</p>
+                )}
               </div>
 
               {/* Phone */}
@@ -212,14 +269,25 @@ const ContactPage = () => {
                 />
               </div>
 
-              {/* Submit */}
-              <button
-                type="button"
-                className="w-full py-4 text-white text-[13.5px] font-semibold uppercase tracking-[0.16em] hover:brightness-110 active:brightness-90 transition-all duration-200"
-                style={{ backgroundColor: '#5B50D6' }}
-              >
-                Send Enquiry
-              </button>
+              {/* Submit — two CTAs, side-by-side on sm+, stacked on mobile */}
+              <div className="flex flex-col sm:flex-row gap-3 pt-1">
+                <button
+                  type="button"
+                  onClick={handleEmail}
+                  className="flex-1 py-4 text-white text-[13.5px] font-semibold uppercase tracking-[0.16em] hover:brightness-110 active:brightness-90 transition-all duration-200"
+                  style={{ backgroundColor: '#5B50D6' }}
+                >
+                  📧 Send via Email
+                </button>
+                <button
+                  type="button"
+                  onClick={handleWhatsApp}
+                  className="flex-1 py-4 text-white text-[13.5px] font-semibold uppercase tracking-[0.16em] hover:brightness-110 active:brightness-90 transition-all duration-200"
+                  style={{ backgroundColor: '#25D366' }}
+                >
+                  💬 Send via WhatsApp
+                </button>
+              </div>
 
             </div>
           </div>
