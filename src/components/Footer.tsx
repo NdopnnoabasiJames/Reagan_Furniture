@@ -172,7 +172,7 @@ const Footer = () => (
       {/* Copyright */}
       <div className="pt-5 md:pt-6">
         <p className="text-gray-500 text-[14.5px] lg:text-[16px]">
-          © 2024 Reagan Furniture &amp; Electronics. All rights reserved.
+          © 2026 Reagan Furniture &amp; Electronics. All rights reserved.
         </p>
       </div>
     </div>
